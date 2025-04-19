@@ -3,9 +3,10 @@
   <head>
     <script>
       if (window.location.hash && window.opener) {
+        const token = window.location.hash.substring(1);
         window.opener.postMessage(
-          'authorization:github:' + window.location.hash.substring(1),
-          window.location.origin
+          'authorization:github:' + token,
+          '*'  // ← sửa window.location.origin thành "*"
         );
         window.close();
       }
