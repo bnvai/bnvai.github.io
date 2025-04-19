@@ -2,6 +2,9 @@ backend:
   name: github
   repo: bnvai/bnvai.github.io
   branch: master
+  base_url: https://bnvai.github.io
+  auth_endpoint: /auth
+  client_id: Ov23liFeVFx5WZZVTdNn
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
