@@ -3,9 +3,8 @@ backend:
   repo: bnvai/bnvai.github.io
   branch: master
   base_url: https://bnvai.github.io
-  auth_endpoint: /auth
+  auth_endpoint: /admin/callback.html
   client_id: Ov23liFeVFx5WZZVTdNn
-  client_secret: ef5bd39617a16be957ebf2a74135e3dc1e5b5738
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
