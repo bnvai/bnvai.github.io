@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      // Gửi mã truy cập về cho Decap CMS
+      if (window.location.hash && window.opener) {
+        window.opener.postMessage(
+          'authorization:github:' + window.location.hash.substring(1),
+          window.location.origin
+        );
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
