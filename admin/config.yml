@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: bnvai/bnvai.github.io
-  branch: main
+  repo: https://github.com/bnvai/bnvai.github.io
+  branch: master
 
 media_library:
   name: uploadcare
