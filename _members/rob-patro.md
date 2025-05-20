@@ -5,7 +5,7 @@ search:
   - MODAL
 role: pi
 group: current
-image: images/prof.sudip
+image: images/sudipmodal.jpeg
 email: rob@cs.umd.edu
 twitter: nomad421
 github: rob-p
