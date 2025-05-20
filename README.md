@@ -1,289 +1,281 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+<h1 align="center">Lab Website Template</h1>
+<p align="center"><img height="200" src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/icons/share-thumbnail.jpg?raw=true" alt="Lab Website Template"></p>
+
+An easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
+Spend less time reinventing the wheel, and more time running your lab.
+
+[**⭐ See the demo ⭐**](https://greenelab.github.io/lab-website-template/)
+
+## Target audience
+
+People who run labs and have some familiarity with GitHub and web technologies.
+In other words, people who need [these features](#features) and have [this background knowledge](#background-knowledge).
+
+## Features
+
+- **Automatically generated citations** (using [Manubot](https://manubot.org)) from **just an identifier** (DOI, PubMed ID, and many more)
+- Automatically pull in and display tags from GitHub repositories
+- Works and looks good on all major desktop and mobile browsers
+- A suite of pre-built components:
+  - formatted tables and code blocks
+  - social media links with icons
+  - figures with captions
+  - image galleries
+  - multi-size cards with image and text
+  - ...and more!
+- A **home page**, where you can highlight the most important things that make your lab special
+- A **research page**, with a sorted, searchable list of all your published works
+- A **blog page**, with a sorted, grouped, tagged list of all your posts
+- A **resources page**, where you can show off your software, datasets, or other useful things
+- Individual **team member pages** with bios, assignable roles, and social media links
+- A **team** page, compiled automatically from individual members
+
+## Background knowledge
+
+Here are some (very basic) definitions to help you interpret the rest of the readme.
+If you aren't already somewhat familiar with these, this template might not be for you.
+That said, the template tries to make things as simple as possible, and if you're willing to learn, you should still be able to use it fairly easily.
+
+- A **repository** (or _repo_ for short) is a place to store code for a project
+- **[Git](https://try.github.io/)** is a way of tracking changes to code in repos through a [command line](https://en.wikipedia.org/wiki/Command-line_interface).
+- **[GitHub](https://github.com/)** is an online place to store, view, track, share, and collaborate on code in repos.
+  You can make simple changes to your code on the GitHub website itself, but for most changes you'll need to use [Git](https://git-scm.com/).
+- **[GitHub Pages](https://pages.github.com/)** (or _gh-pages_ for short) is a service built-in to GitHub that can host a website for you, for free.
+  No need to buy monthly hosting from GoDaddy!
+  Put the source code for your website in a repo, turn on GitHub Pages, and the site will go live.
+  Any changes you make to the code will update on the site automatically.
+- **[GitHub Actions](https://github.com/features/actions)** (or _gh-actions_ for short) is a feature of GitHub that can (among other things) automatically run scripts and other actions when changes are made to a repo.
+  Setting up GitHub Actions is only needed for certain specific tasks that aren't handled automatically by Jekyll or other parts of the template.
+- **[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)** is how you write the main content of a web page.
+  It tells the browser what to show, like paragraphs of text, tables of numbers, images with captions, etc.
+- **[Markdown](https://en.wikipedia.org/wiki/Markdown)** is a easier way to write certain [basic things from HTML](https://commonmark.org/help/).
+  But browsers can't display markdown directly; it has to be converted to HTML first.
+- **[Sass](https://sass-lang.com/)** (a superset of [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)) is how you get a web page to look that way you want.
+  You can set [positions, margins, colors, fonts, etc](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Keyword_index), and apply them to certain elements (tables, images, etc) in the HTML with [selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors).
+- **[JavaScript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript)** (or _js_ for short) is a programming language to make web pages more interactive.
+  HTML is static/unchanging, but JavaScript allows the page to change dynamically as the user is viewing it.
+  For example, JavaScript can be used to hide/show certain paragraphs in the HTML based on what the user types into a search box.
+- **[Jekyll](https://jekyllrb.com/)** is a tool that can automatically generate large HTML sites from much simpler markdown, and with less grunt work and code duplication, allowing you to just focus on the content.
+  It does all this fancy work in a "pre-process" step, before you view the site.
+  When you make a change, Jekyll compiles everything together into the final product which can then be viewed or uploaded.
+  Jekyll also integrates very nicely with GitHub Pages, so almost no set up is required.
+- **[Liquid](https://shopify.github.io/liquid/)** is a [templating language](https://en.wikipedia.org/wiki/Template_processor) built-in to Jekyll that allows you to insert repetitive chunks of content automatically and define logic for how your site is built by Jekyll.
+  For example, you could provide Jekyll with a simple list of items, then use Liquid to sort them and [automatically](https://shopify.github.io/liquid/tags/iteration/) put each one in their own formatted table row.
+  You can almost think of Liquid as (a much more limited) JavaScript for Jekyll, except that it still results in a static file at the end.
+- **[Ruby](https://www.ruby-lang.org/en/)** is a general-purpose programming language.
+  You don't need to know Ruby to use this template, but you'll encounter a few [Ruby-related files](https://www.rubyguides.com/2018/09/ruby-gems-gemfiles-bundler/) in the template, because Jekyll is written in Ruby.
+- **[Python](https://www.python.org/)** is a general-purpose programming language.
+  You don't need to know Python to use this template, unless you want to understand or modify the behavior of [the automatic citations](#automatic-citations).
+
+## Contents
+
+An overview of the contents of this template and basic notes on how to edit and use them.
+
+### Your files and folders
+
+Files and folders to be edited by you.
+
+- `/blog`, `/contact`, etc - A sub-folder to create in the resulting site, eg `yoursite.com/blog`.
+  You can name a folder anything you want, put an `index.md` in it, and link to it like any other page.
+- `/_data` - A place to put large, ordered lists of data that don't need individual generated pages.
+  Your `research` and `resources` content live here.
+- `/_members` - Where your team member bios go.
+  Member bios can include a photo, role (researcher/programmer/etc), group (current/alumni/etc), and social media links.
+  Each file will automatically generate its own page.
+- `/_posts` - Where your blog posts go.
+  Name your post files in the format `YYYY-MM-DD-your-post-title.md`.
+  Each file will automatically generate its own page.
+- `/icons` - Icons for when your site is bookmarked in a browser, added as an app shortcut on a phone, and shared on social media.
+  These are important!
+  Replace these images with variations of your own logo, taking care to match the size and cropping.
+  They can be transparent, but make sure they can be distinguished on any background, dark or light.
+  [realfavicongenerator.net](https://realfavicongenerator.net/) can help you generate all the necessary icon variations, but it goes overboard with its support for unused legacy browsers like Internet Explorer.
+  What's included in this template is a simplified subset that works fine on all of the most common modern browsers.
+- `/images` - A default folder to hold all your site's images.
+  You can organize and place your images however you want though.
+  For example, you could put photos of your team in `/team/photos/` and just refer to them like `team/photos/anna-sun.jpg`.
+- `_config.yml` - The main Jekyll configuration for your site.
+  Contains important site-wide things like the site title, the site url, the default email/twitter/etc, the default background image, etc.
+- `404.md` - A fallback page for when a user goes to a page that doesn't exist on your site.
+- `index.md` - The landing/"home" page for your site.
+- `start.sh` - A convenient script to start and open the site on your computer.
+  Run like `./start.sh`.
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
+#### General editing notes
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+- Naming a file `index` is a web convention for referring to the "main" page of a particular folder.
+  For example, `yoursite.com/join` actually takes you to `/join/index.html` (generated from `/join/index.md`), and `yoursite.com` takes you to the root `index.html` (generated from `index.md`).
 
-:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
+- Liquid has [special syntax to trim whitespace](https://shopify.github.io/liquid/basics/whitespace/) on either side of Liquid tags.
+  Sometimes this matters, like when you have expressions on separate lines that might evaluate to blank, leading markdown to insert blank paragraphs, messing up layout.
+  We recommend only adding the trim syntax when you observe unwanted whitespace/paragraphs in your resulting site.
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and must be retained in the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
+### Template files and folders
 
-[![Minimal Mistakes live preview][2]][1]
+Files and folders used by the template.
+You might want to touch these if you want more customization, but make sure you know what you're doing.
 
-[1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
+- `.github` - Files related to GitHub Actions.
+  This template uses GitHub Actions to help [build the research page](#automatic-citations).
+- `/_includes` - Reusable, small snippets of HTML that can take parameters, aka _components_.
+  See `index.md` for which ones you are meant to use.
+  Notably, see `header.html` to change the links that appear in the header on every page.
+- `/_layouts` - Templates that all pages are built upon.
+  See `member.html` and `post.html` to change how the individual team member and blog post pages look.
+- `/css` - Sass styles that determine how the site looks.
+  Notably, see `variables.scss` to change things like site-wide colors and fonts.
+  If you need to add your own custom styles, make a new `.scss` file here and make sure to list it in `/_includes/styles.html`.
+- `/js` - JavaScript "plugins" that add interactive features to the site, such as tooltips.
 
-![layout examples](screenshot-layouts.png)
+### Under-the-hood files and folders
 
-## Notable features
+Files and folders used internally by Jekyll or other tools in the setup.
+You should never need to touch these.
 
-- Bundled as a "theme gem" for easier installation/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), [utterances](https://utteranc.es/), and [giscus](https://giscus.app/)).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Arabic (عربي), Brazilian Portuguese (Português brasileiro), Bulgarian, Catalan, Chinese, Czech, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Kiswahili, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), Ukrainian (Українська) and Vietnamese.
+- `/_site` - The "compiled" output of the entire Jekyll site.
+  Changes to it will get overwritten every time the site is rebuilt.
+  This folder is also what GitHub reads to make the GitHub Pages site.
+- `/.jekyll-cache` - Cache so that Jekyll can build and re-build the site quickly.
+- `.gitignore` - Files to not be tracked/included in your site's repo.
+- `debug.log` - Jekyll outputs this log when something goes wrong compiling the site.
+- `Gemfile` and `Gemfile.lock` - Files that specify the package dependencies of the project.
+  Similar to `package.json` and `package-lock.json` in `npm`.
 
-## Skins (color variations)
+## FAQ's
 
-This theme comes in nine different skins (in addition to the default one).
+### Starting a copy of this template
 
-| `air` | `contrast` | `dark` |
-| --- | --- | --- |
-| [![air skin](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive-large.png) | [![contrast skin](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive-large.png) | [![dark skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive-large.png) |
+1. [Make a GitHub account](https://github.com/join)
+2. [Create a new repo under your account from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+   We recommend naming your repository `yourlabname-website`.
+   Leave `Include all branches` unchecked.
 
-| `dirt` | `mint` | `sunrise` |
-| --- | --- | --- |
-| [![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive-large.png) | [![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive-large.png) | [![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive-large.png) |
+### Editing your site
 
-| `aqua` | `neon` | `plum` |
-| --- | --- | --- |
-| [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
+[Find the item you want to edit](#contents), then:
 
-## Demo pages
+1. Edit the file [through the GitHub website](https://docs.github.com/en/github/managing-files-in-a-repository/editing-files-in-your-repository)
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+OR
 
-Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
+1. Edit the file [with Git](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-using-the-command-line) on your computer
 
-[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
-[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
-[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
-[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
-[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
-[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
-[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
-[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+### Previewing and testing changes on the GitHub website
 
-## Installation
+1. [Make a Netlify account](https://app.netlify.com/signup) for your organization
+2. [Hook up Netlify to your repo](https://docs.netlify.com/configure-builds/get-started/#basic-build-settings)
+3. [Set the deploy notifications you want](https://docs.netlify.com/site-deploys/notifications/).
+A bunch are enabled by default.
+We recommend deleting them all, then adding just `GitHub commit status → Deploy Preview succeeded`, `GitHub commit status → Deploy Preview failed`, `GitHub pull request comment → Deploy Preview succeeded`, and `GitHub pull request comment → Deploy Preview failed`.
+With these, when you open or update a PR, Netlify will post a comment with a link to the preview and its status, and also add a [check](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-required-status-checks)/[status](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-status-checks) for the preview.
+4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to your repo, and a live preview website of the changes will be automatically built and shown in the pull request according to your notifications.
 
-There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
+### Previewing and testing changes on your computer
 
-### Gem-based method
+1. [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+2. [Install RubyGems](https://rubygems.org/pages/download)
+3. Open your command line
+4. [Install Jekyll](https://jekyllrb.com/) by running `gem install bundler jekyll`
+5. Go to the folder where you cloned your site, eg `cd lab-website-template`
+6. Start the site by running `./start.sh`
+7. The site should automatically open in a browser.
+   Any changes you make should automatically rebuild the site and refresh the page, except for changes to `_config.yml` which require re-running the start script.
 
-With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
+### Publishing your site
 
-This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
+1. [Turn on GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) in the settings of your repo
+2. Your site should be live within a minute or two
+3. Go where GitHub shows you that your site is published.
+   If you haven't set up a custom domain, it should be at `https://your-lab.github.io/lab-website/` by default.
 
-1. Add the following to your `Gemfile`:
+### Using the pre-built components
 
-   ```ruby
-   gem "minimal-mistakes-jekyll"
-   ```
+The various `index.md` files in this repo aim to list and document all of the included components.
+See their source code to see how to write the components into your site, and see the [template demo](https://greenelab.github.io/lab-website-template) to see what the components look like in action.
 
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+### Automatic Citations
 
-   ```bash
-   bundle
-   ```
+Automatic citations work a little bit different than the rest of the template.
+Instead of Jekyll automatically building them, we need to run a special Python script in `/_data/build-research.py`.
 
-3. Set the `theme` in your project's Jekyll `_config.yml` file:
+**Having GitHub run the script for you (previewing and testing on the GitHub website):**
 
-   ```yaml
-   theme: minimal-mistakes-jekyll
-   ```
+When possible, make pull requests from branches on your main website repo rather than from forks of it.
+GitHub Actions still has certain [quirks](https://github.com/stefanzweifel/git-auto-commit-action/issues/117) and [limitations](https://github.com/stefanzweifel/git-auto-commit-action#using-the-action-in-forks-from-public-repositories) with forks, so the following process will be more reliable with branches.
 
-To update the theme run `bundle update`.
+1. Make sure that [GitHub Actions is enabled](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/disabling-or-limiting-github-actions-for-a-repository) on your main website repo
+2. If making changes from a fork of your main website repo, make sure GitHub Actions is also enabled on the fork
+3. Add or change the desired papers in `/_data/research-input.yml`
+4. [Make a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) with the changes 
+5. GitHub should automatically run the Python script
+6. Citations will be automatically generated and output to `/_data/research-output.yml`
+7. GitHub should automatically commit the output file onto your pull request
+8. The _research list_ component will now (in [pull request previews](#previewing-and-testing-changes-on-the-github-website) and when you merge the pull request) show the updated list of papers
 
-### Remote theme method
+**Running the script manually (previewing and testing on your computer):**
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+1. [Install Python](https://www.python.org/downloads/)
+2. [Install pip](https://pip.pypa.io/en/stable/installing/)
+3. [Install Manubot](https://github.com/manubot/manubot#installation)
+4. Add or change the desired papers in `/_data/research-input.yml`
+5. Run `./build.sh`, which will run the Python script
+6. Citations will be automatically generated and output to `/_data/research-output.yml`
+7. The _research list_ component will now show the updated list of papers
 
-To install:
+### Configuring blog post comments
 
-1. Create/replace the contents of your `Gemfile` with the following:
+Having comments on blog posts (or elsewhere) isn't a trivial feature to implement.
+There needs to be 1) a plugin on the page that lets users log in, read comments, and post new ones, and 2) a server running to receive, permanently store, and retrieve comments.
 
-   ```ruby
-   source "https://rubygems.org"
+It's beyond the purview of this template to build in solution for this, but luckily there are many third party ones that can be easily integrated:
 
-   gem "github-pages", group: :jekyll_plugins
-   gem "jekyll-include-cache", group: :jekyll_plugins
-   ```
+- [Disqus](https://disqus.com/)
+- [Facebook Comments](https://developers.facebook.com/docs/plugins/comments/)
+- [Hyvor Talk](https://talk.hyvor.com/)
+- [Staticman](https://staticman.net/docs/)
+- [Schnack](https://github.com/schn4ck/schnack)
+- [Remark42](https://github.com/umputun/remark42)
+- [Isso](https://github.com/posativ/isso)
 
-2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
+...[to name a few](https://www.google.com/search?q=jekyll+comments).
+Research the options [carefully](https://replyable.com/2017/03/disqus-is-your-data-worth-trading-for-convenience).
 
-3. Fetch and update bundled gems by running the following [Bundler](https://bundler.io/) command:
+Some are full services that take care of the plugin and server for you.
+Usually for these, you just create an account the paste the code snippet they give you anywhere you want a comment section to appear, eg at the bottom of `/_layouts/post.html`.
 
-   ```bash
-   bundle
-   ```
+Others just give you a plugin and the tools you need to run your own server, giving you greater privacy and security, but requiring more work to set up.
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.26.2"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+### Hooking up a custom domain
 
-<!--
-  Dev note: The version number is currently hard-coded in these files:
+Follow the instructions [here](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
 
-    - package.json
-    - README.md (this file)
-    - docs/_data/theme.yml
-    - docs/_pages/home.md (in Front Matter "excerpt")
+Summarized:
 
-  `package.json` holds the authoritative version number, and the others can be updated with `bundle exec rake version`.
+1. Purchase a domain name from a reputable service, such as Google Domains, Namecheap, etc.
+2. Point your domain name provider to GitHub Pages using an `A` record.
+   It's slightly different for each company, so they should have their own instructions on how to do this.
+3. Set the custom domain field in the settings of the repo.
 
-  The following files should also be regenerated:
+Then:
 
-    - _includes/copyright.html, _includes/copyright.js, _sass/minimal-mistakes/_copyright.scss
-      (Run `bundle exec rake clean` then `bundle exec rake copyright` - all three references `package.json`)
-    - assets/js/main.min.js (Run `bundle exec rake js`, references `_includes/copyright.js`)
+1. Set `baseurl` in `_config.yml` to `""` to make all the links on your site operate under the assumption that the root of the site is at `your-new-domain.com/` instead of eg `your-lab.github.io/lab-website`.
 
-  *Tip*: The default Rake task will update all of the above files at once.
+### Updating your site when this template gets updated
 
-  Additionally, the license year is hard-coded in these files and are NOT covered by a Rake task:
+See [this post](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository) about pulling upstream changes from a template repository.
 
-    - README.md (this file, near the end)
-    - LICENSE
--->
+## Acknowledgments
 
-**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
+All included photos are licensed under [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/), found using [Creative Commons Search](https://search.creativecommons.org/).
 
-## Usage
+## Support
 
-For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+There are a lot of different technologies involved in this template; it's okay if you don't have a deep understanding of them all.
 
-## Contributing
+If you need help, first make sure you search this readme and look through the various `index.md` files in the repo.
+Also, we've tried to include comments in all files where we think they're needed, especially where users are likely to want to customize things.
+Look for file names relevant to your question, and you may find that you can achieve what you want just by opening them up and editing them.
 
-Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
+If you still need help, or if you have a suggestion for how to make this template easier to use for novices, please [post a new issue on this repository](https://github.com/greenelab/lab-website-template/issues).
 
-For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
-
-### Pull Requests
-
-When submitting a pull request:
-
-1. Clone the repo.
-2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
-3. Open a pull request on GitHub and describe the feature or fix.
-
-Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
-
-## Credits
-
-### Creator
-
-**Michael Rose**
-
-- <https://mademistakes.com>
-- <https://twitter.com/mmistakes>
-- <https://github.com/mmistakes>
-
-### Icons + Demo Images:
-
-- [The Noun Project](https://thenounproject.com) - Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fontawesome.io/)
-- [Unsplash](https://unsplash.com/)
-
-### Other:
-
-- [Jekyll](http://jekyllrb.com/)
-- [jQuery](http://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Gumshoe](https://github.com/cferdinandi/gumshoe)
-- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
-- [Lunr](http://lunrjs.com)
-- [Clipboard.js](https://clipboardjs.com)
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2013-2024 Michael Rose and contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
-creators Garrett Knoll, Arthur Shlain, and tracy tam.
-Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
-
-Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
-Copyright (c) 2017 Dave Gandy.
-Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
-and [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
-
-Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
-Copyright (c) 2017, Miriam Eric Suzanne.
-Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
-
-Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
-Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
-Copyright (c) 2013 Dave Rubert and Chris Coyier.
-FitVids is distributed under the terms of the [WTFPL License](http://www.wtfpl.net/).
-
-Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
-Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
-Magnific Popup is distributed under the terms of the MIT License.
-
-Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
-Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
-Copyright (c) 2019 Chris Ferdinandi.
-Gumshoejs is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
-Copyright (c) 2010 "Cowboy" Ben Alman.
-jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
-Copyright (c) 2015 Luke Jackson.
-GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
-Copyright (c) 2015 Max White <mushishi78@gmail.com>.
-Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
-Copyright (c) 2017 Vladimir Jimenez.
-Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
-Copyright (c) 2018 Oliver Nightingale.
-Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [clipboard.js](https://clipboardjs.com/),
-Copyright (c) 2021 Zeno Rocha.
-Clipboard.js is distributed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+<p align="center"><img height="200" src="https://user-images.githubusercontent.com/8326331/96628877-d1658e00-12e0-11eb-894c-7bb0d7f07632.png" alt="Lab Website Template"></p>

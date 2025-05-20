@@ -13,8 +13,6 @@ twitter: nomad421 # default Twitter handle, without the @
 # set to "" if hosting at a custom domain, eg yoursite.com
 baseurl: "/"
 
-remote_theme: mmistakes/minimal-mistakes
-
 # default front matter parameters for markdown files
 # defaults can be overridden on a particular page, eg:
 # ---
@@ -54,7 +52,7 @@ collections:
 
 # sass settings
 sass:
-  sass_dir: _sass
+  sass_dir: css
 
 # syntax highlighting
 highlighter: rouge
