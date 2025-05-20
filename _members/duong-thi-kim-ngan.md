@@ -5,15 +5,15 @@ search:
   - NGAN
 role: undergrad
 group: current
-image: images/ngan
+image: images/ngan.png
 github: k3yavi
-email: avi.srivastava@nyu.edu
+email: dkimngan2104@gmail.com
 twitter: k3yavi
 ---
 
-She received her bachelor’s degree in inBiotechnology in 2023 from the University of Science, Vietnam National University, Vietnam. 
+She received her bachelor’s degree in inBiotechnology in 2023 from the University of Science, Vietnam National University, Vietnam.
 
-She pursues a MS degree at the Department of Nano-Biomechanics and Biomedical Engineering, Pukyong National University, South Korea (2024-2026). 
+She pursues a MS degree at the Department of Nano-Biomechanics and Biomedical Engineering, Pukyong National University, South Korea (2024-2026).
 
 Her research interests include flexible materials; advanced nanomaterials synthesis; nanomedical application in wound healing
 
