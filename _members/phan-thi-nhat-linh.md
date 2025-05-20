@@ -3,10 +3,10 @@ title: PHAN THI NHAT LINH
 search:
   - PT LINH
   - LINH
-role: phd
+role: ms
 group: current
 image: images/linh.png
-email: npsingh@umd.edu
+email: nhatlinh1042000@gmail.com
 twitter: PratapNoor
 github: NPSDC
 ---

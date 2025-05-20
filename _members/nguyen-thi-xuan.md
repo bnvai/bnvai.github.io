@@ -3,11 +3,11 @@ title: NGUYEN THI XUAN
 search:
   - NT XUAN
   - XUAN
-role: phd
+role: ms
 group: current
-image: images/xuan.jpg
-email: hcho1239@umd.edu
-github: hyeonjin-cho
+image: images/xuan.png
+email: ntxuanbio@gmail.com
+github: xuannt
 ---
  
 She received her Bachelor’s degree in Biotechnology in 2022 from the Industrial University of Ho Chi Minh , Viet Nam.

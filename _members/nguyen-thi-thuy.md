@@ -6,9 +6,9 @@ search:
 role: phd
 group: current
 image: images/thuy.jpg
-github: k3yavi
+github: thuytt
 email: avi.srivastava@nyu.edu
-twitter: k3yavi
+twitter: thuytt
 ---
 
 Hello everyone! How’s your day going? Hope you’re all doing well!

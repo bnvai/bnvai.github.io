@@ -3,12 +3,10 @@ title: DUONG THI KIM NGAN
 search:
   - KIM NGAN
   - NGAN
-role: undergrad
+role: ms
 group: current
 image: images/ngan.png
-github: k3yavi
 email: dkimngan2104@gmail.com
-twitter: k3yavi
 ---
 
 She received her bachelor’s degree in inBiotechnology in 2023 from the University of Science, Vietnam National University, Vietnam.
