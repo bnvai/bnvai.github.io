@@ -1,14 +1,13 @@
 ---
-title: Skylar Chan
+title: NGUYEN VAN BANG
 search:
-  - S. Chan
-  - S Chan
+  - NVB
+  - BANG
 role: undergrad
 group: current
-image: images/skylar_chan.jpg
-email: schan12@terpmail.umd.edu
-github: schance995
+image: images/bang.png
+email: bangnv.bk5139@gmail.com
+github: bnvai
 ---
 
-Spencer (Skylar) Chan is a sophmore CS major in the UMD department of Computer Science.  He is doing research in the COMBINE-lab and currently working on 
-algorithms and data structures for searching large-scale single-cell gene expression data.
+Hi, I am Bang
