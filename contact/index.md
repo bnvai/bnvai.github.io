@@ -7,13 +7,14 @@ title: Contact
 Our lab is part of the [Department of Computer Science](https://www.cs.umd.edu/), at the [University of Maryland](https://www.umd.edu).
 We are located on the 3rd floor of the [Brendan Iribe Center for Computer Science and Engineering](https://iribe.umd.edu/).
 
-{% include figure.html image="images/iribe.jpg" width="100%" %}
+{% include figure.html image="images/pknu.jpg" width="100%" %}
 
 ## Email
 
 <style type="text/css">
    span.codedirection { unicode-bidi:bidi-override; direction: rtl; }
 </style>
+
 <span class="codedirection">ude.dmu.sc@bor</span>
 {:.center}
 
@@ -33,5 +34,5 @@ University of Maryland
 College Park, MD 20740
 {:.center}
 
-[<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps/place/Brendan+Iribe+Center+for+Computer+Science+and+Engineering/@38.9890953,-76.9387086,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c7e9e636ed11:0x9aaf14503032f4a!8m2!3d38.9890953!4d-76.9365146)
+[<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps?rlz=1C1GCER_en&um=1&ie=UTF-8&fb=1&gl=kr&sa=X&geocode=KR2fN91q7Gg1MbEFhMSgzbwy&daddr=Busan,+Nam-gu,+Yongso-ro,+45)
 {:.center}
