@@ -1,14 +1,14 @@
 ---
-title: Noor Pratap Singh
+title: PHAN THI NHAT LINH
 search:
-  - N. Singh
-  - N Singh
+  - PT LINH
+  - LINH
 role: phd
 group: current
-image: images/noor.jpg
+image: images/linh.png
 email: npsingh@umd.edu
 twitter: PratapNoor
 github: NPSDC
 ---
 
-I am a PhD student at the Department of Computer Science at the University of Maryland  working with Dr. Rob Patro. I am interested in developing and applying statistical methods for the analysis of different high-throughput data.
+I am a PhD student at the Department of Computer Science at the University of Maryland working with Dr. Rob Patro. I am interested in developing and applying statistical methods for the analysis of different high-throughput data.
