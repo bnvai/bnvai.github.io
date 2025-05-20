@@ -8,8 +8,8 @@ title: Resources
 
 ## Software
 
-The following software is primarily developed or maintained by the COMBINE-lab or 
-by members of the COMBINE-lab in conjunction with others.
+The following software is primarily developed or maintained by the NMBInno-lab or
+by members of the NMBInno-lab in conjunction with others.
 
 {% capture html %}
 {% include resource-list.html type="software" size="large" %}
