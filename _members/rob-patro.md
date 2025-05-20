@@ -1,11 +1,11 @@
 ---
-title: Rob Patro
+title: SUDIP MODAL
 search:
-  - R. Patro
-  - R Patro
+  - S MODAL
+  - MODAL
 role: pi
 group: current
-image: images/rob.jpg
+image: images/roMODAL
 email: rob@cs.umd.edu
 twitter: nomad421
 github: rob-p
