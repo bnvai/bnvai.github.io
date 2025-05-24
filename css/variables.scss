@@ -1,5 +1,8 @@
 // use these variables in other scss files to keep consistent look across site
 
+// Base font size for easier scaling
+$base-font-size: 16px;
+
 // shades of gray
 $black: #101010;
 $dark-gray: #404040;
@@ -33,9 +36,9 @@ $light-theme: $light-blue;
 $shadow: 0 0 10px 0 #00000040;
 
 // fonts
-$serif: "Lora", serif;
-$sans: "Poppins", sans-serif;
-$mono: "Cousine", monospace;
+$serif: 'Lora', serif;
+$sans: 'Poppins', sans-serif;
+$mono: 'Cousine', monospace;
 // additional code needed to use these in /_includes/fonts.html
 
 // font weights
@@ -52,3 +55,66 @@ $page: 800px; // max-width of the main page column
 // these affect layout of header and other components:
 $tablet: 900px; // screen width cutoff point for tablets
 $phone: 500px; // screen width cutoff point for phones
+
+// --- Spacing ---
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+$spacing-xxl: 40px;
+
+// --- Shadows ---
+$shadow-card-light: 0 1px 3px rgba(0, 0, 0, 0.05); // Shadow for cards
+$shadow-container: 0 2px 5px rgba(0, 0, 0, 0.1); // Shadow for the main slider container
+
+// --- Borders & Radii ---
+$border-radius-card: 6px;
+$border-radius-container: 8px;
+$border-thickness: 1px;
+
+// --- Transitions ---
+$transition-speed-fast: 0.3s;
+$transition-speed-normal: 0.5s;
+
+// --- Font Sizes (relative to base-font-size) ---
+$font-size-xsm: 0.6875em; // ~11px for date
+$font-size-sm: 0.75em; // ~12px for authors
+$font-size-md: 0.875em; // ~14px for see more link, general text
+$font-size-lg: 1em; // ~16px for card title
+$font-size-xl: 1.5em; // ~24px for nav buttons
+
+// --- Breakpoints ---
+$breakpoint-md: 992px; // For 2 slides per view
+$breakpoint-sm: 768px; // For 1 slide per view
+
+// --- Button Specific Colors ---
+$btn-primary-bg: $theme; // Blue
+$btn-primary-text: $white;
+$btn-secondary-bg: $gray; // Gray
+$btn-secondary-text: $white;
+$btn-success-bg: $green; // Green
+$btn-success-text: $white;
+$btn-outline-text: $dark-gray; // For outline buttons
+
+// --- Button States ---
+$btn-disabled-bg: $light-gray;
+$btn-disabled-text: $gray;
+$btn-disabled-border: $light-gray;
+
+// --- Button Sizing ---
+$btn-padding-y-sm: $spacing-xs; // 8px
+$btn-padding-x-sm: $spacing-sm; // 12px
+$btn-padding-y-md: $spacing-sm; // 12px
+$btn-padding-x-md: $spacing-md; // 16px
+$btn-padding-y-lg: $spacing-md; // 16px
+$btn-padding-x-lg: $spacing-lg; // 20px
+
+$btn-font-size-sm: $font-size-md; // 14px
+$btn-font-size-md: $base-font-size; // 16px
+$btn-font-size-lg: 1.125em; // ~18px
+
+// --- Loader Specific ---
+$loader-size: 1.2em;
+$loader-color: $white;

@@ -1,0 +1,47 @@
+// scss/components/_back-to-top.scss
+@import 'variables';
+@import 'mixins';
+
+.button {
+  @include button-reset; // Use the button reset mixin
+  @include flex-center; // Center the arrow inside the button
+
+  position: fixed; /* Fixed position relative to the viewport */
+  bottom: $spacing-xl; /* 30px from bottom */
+  right: $spacing-xl; /* 30px from right */
+
+  background-color: $theme; /* Use your theme color */
+  color: $white; /* White arrow */
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height for a circular button */
+  border-radius: 50%; /* Make it circular */
+  box-shadow: $shadow; /* Apply your general shadow */
+  font-size: $font-size-xl; /* Large arrow icon */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Ensure it's not clickable when hidden */
+  transition: opacity $fast, visibility $fast, transform $fast; /* Smooth transition for show/hide and hover */
+  transform: translateY(20px); /* Start slightly below its final position */
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+
+  &:hover {
+    background-color: darken($theme, 10%); /* Darken on hover */
+    transform: translateY(0) scale(1.05); /* Slight lift and scale on hover */
+  }
+
+  &.show {
+    opacity: 1; /* Fully visible */
+    visibility: visible;
+    transform: translateY(0); /* Move to final position */
+  }
+
+  // Responsive adjustments
+  @media (max-width: $phone) {
+    // Adjust for smaller screens
+    bottom: $spacing-lg;
+    right: $spacing-lg;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2em;
+  }
+}
