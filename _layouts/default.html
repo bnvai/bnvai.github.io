@@ -4,8 +4,11 @@
     {% include header.html %}
     <main>{% include content.html content=content %}</main>
     {% include footer.html %}
-    <a href="#" class="button" data-button-action="Top" id="scrollToTopBtn">
-      Top
-    </a>
+    {% include button.html
+      label="⤴"
+      title="Top"
+      id="scrollToTopBtn"
+      class="button fixed-bottom-right"
+    %}
   </body>
 </html>
