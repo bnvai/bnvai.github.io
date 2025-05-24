@@ -1,6 +1,8 @@
-// scss/components/_back-to-top.scss
-@import 'variables';
-@import 'mixins';
+---
+---
+
+@import "variables";
+@import "mixins";
 
 .button {
   @include button-reset; // Use the button reset mixin
