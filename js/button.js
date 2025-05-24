@@ -1,33 +1,37 @@
-// back to top plugin
-// hiện nút khi scroll xuống và cuộn lên đầu trang khi nhấn nút
+// Back to Top plugin
+// Show the button when scrolling down and scroll back to top when clicked
 
 let backToTopBtn;
-let showOffset = 200; // px
+const showOffset = 200; // Scroll offset in pixels to show button
 
 const createBackToTop = () => {
+  // Get the Back to Top button element by ID
   backToTopBtn = document.getElementById("scrollToTopBtn");
-  if (!backToTopBtn) return;
+  if (!backToTopBtn) return; // Exit if button not found
 
-  // khi click, cuộn lên đầu trang
+  // Add click event: smooth scroll back to top
   backToTopBtn.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  // thêm listener scroll với debounceButton
+  // Add scroll event listener with debounce to optimize performance
   window.addEventListener("scroll", debounceButton(toggleBtnVisibility, 100));
-  toggleBtnVisibility(); // gọi luôn lần đầu để ẩn/hiện đúng
+
+  // Call once immediately to set initial visibility of the button
+  toggleBtnVisibility();
 };
 
+// Show or hide the button based on scroll position
 const toggleBtnVisibility = () => {
   if (window.scrollY > showOffset) {
-    backToTopBtn.classList.add("show");
+    backToTopBtn.classList.add("show"); // Show button if scrolled down beyond offset
   } else {
-    backToTopBtn.classList.remove("show");
+    backToTopBtn.classList.remove("show"); // Hide button if near top
   }
 };
 
-// debounceButton hàm để tối ưu hiệu năng scroll
+// Debounce function to limit how often a function is called during scroll events
 const debounceButton = (func, delay) => {
   let timer;
   return () => {
@@ -36,5 +40,5 @@ const debounceButton = (func, delay) => {
   };
 };
 
-// khi trang load xong thì khởi tạo nút
+// Initialize the Back to Top button when the page is fully loaded
 window.addEventListener("load", createBackToTop);
