@@ -3,12 +3,12 @@
   <body>
     {% include header.html %}
     <main>{% include content.html content=content %}</main>
-    {% include footer.html %}
     {% include button.html
-      label="⤴"
+      label="⬆"
       title="Top"
       id="scrollToTopBtn"
       class="button fixed-bottom-right"
     %}
+    {% include footer.html %}
   </body>
 </html>
