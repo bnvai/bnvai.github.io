@@ -18,7 +18,7 @@ const createSearch = () => {
   if (!searchInput || !cards.length) return;
 
   // attach filter function to search box input
-  searchInput.addEventListener("input", debounce(filterCards, 50));
+  searchInput.addEventListener("input", debounceSearchBox(filterCards, 50));
 
   // get url param and search
   loadUrlSearch();
@@ -97,7 +97,7 @@ const highlightTerms = (card, query) => {
 };
 
 // util func to debounce search box
-const debounce = (func, delay) => () => {
+const debounceSearchBox = (func, delay) => () => {
   window.clearTimeout(window["card_search_timer"]);
   window["card_search_timer"] = window.setTimeout(func, delay);
 };
