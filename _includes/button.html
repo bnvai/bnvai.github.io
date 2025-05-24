@@ -1,0 +1,12 @@
+{% assign label = include.label | default: "@@" %}
+{% assign title = include.title | default: "Button" %}
+{% assign id = include.id | default: "scrollToTopBtn" %}
+{% assign class = include.class | default: "scroll-to-top" %}
+
+<button
+  id="{{ id }}"
+  class="{{ class }}"
+  title="{{ title }}"
+>
+  {{ label }}
+</button>
