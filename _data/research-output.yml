@@ -12,14 +12,37 @@
   date: '2025-05-08'
   link: https://doi.org/g9k8cd
   id: doi:10.1021/acsbiomaterials.5c00209
-  thumbnail: https://pubs.acs.org/cms/10.1021/acsbiomaterials.5c00209/asset/images/medium/ab5c00209_0009.gif
+  image: https://pubs.acs.org/cms/10.1021/acsbiomaterials.5c00209/asset/images/medium/ab5c00209_0009.gif
   tags:
   - cancer
   - cancer therapy
   - irradiation
   - lasers
   - tumors
-  image: https://pubs.acs.org/cms/10.1021/acsbiomaterials.5c00209/asset/images/medium/ab5c00209_0009.gif
+- title: Synergistic Therapeutic Effects of Prussian Blue Erbium-Doped Hydroxyapatite
+    Nanoparticles in Photothermal Photodynamic Cancer Therapy
+  authors:
+  - Thi Thuy Truong
+  - Vu Hoang Minh Doan
+  - Dinh Quan Nguyen
+  - Quoc Dung Nguyen
+  - Jaeyeop Choi
+  - Bharathiraja Subramaniyan
+  - Jaesung Ahn
+  - Byeongil Lee
+  - Junghwan Oh
+  - Sudip Mondal
+  publisher: ACS Biomaterials Science &amp; Engineering
+  date: '2025-04-01'
+  link: https://doi.org/g9k8jz
+  id: doi:10.1021/acsbiomaterials.5c00027
+  image: https://pubs.acs.org/cms/10.1021/acsbiomaterials.5c00027/asset/images/medium/ab5c00027_0010.gif
+  tags:
+  - cancer
+  - cancer therapy
+  - irradiation
+  - lasers
+  - tumors
 - title: Recent progress on fabrication and drug delivery applications of nanostructured
     hydroxyapatite
   authors:
@@ -55,7 +78,3 @@
   extra-links:
   - type: manubot
     link: https://greenelab.github.io/meta-review/
-  - type: source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/

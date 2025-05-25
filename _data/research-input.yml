@@ -57,6 +57,15 @@
     - lasers
     - tumors
 
+- id: doi:10.1021/acsbiomaterials.5c00027
+  image: https://pubs.acs.org/cms/10.1021/acsbiomaterials.5c00027/asset/images/medium/ab5c00027_0010.gif
+  tags:
+    - cancer
+    - cancer therapy
+    - irradiation
+    - lasers
+    - tumors
+
 - id: doi:10.1002/wnan.1504
   image: https://wires.onlinelibrary.wiley.com/cms/asset/5c226382-403d-45f8-9217-96a4b3177e2c/wnan1504-toc-0001-m.jpg
   extra-links:
@@ -71,7 +80,3 @@
   extra-links:
     - type: manubot
       link: https://greenelab.github.io/meta-review/
-    - type: source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
