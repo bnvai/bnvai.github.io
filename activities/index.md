@@ -6,7 +6,7 @@ title: Activities
 
 The following software is primarily developed or maintained by the NanoBioMedicineInno Lab
 
-{% assign images = site.data.images-activities %}
+{% assign images = site.data.images %}
 
 <p>Image count: {{ images | size }}</p>
 <ul>
