@@ -1,23 +1,24 @@
-- title: Genetic demultiplexing of pooled single-cell RNA-sequencing samples in cancer
-    facilitates effective experimental design
+- title: Advanced Precision Dual Photothermal and Photodynamic Therapy for Prostate
+    Cancer Using PSMA-ICG-Conjugated Gold Nanorods
   authors:
-  - Lukas M. Weber
-  - Ariel A. Hippen
-  - Peter F. Hickey
-  - Kristofer C. Berrett
-  - Jason Gertz
-  - Jennifer Anne Doherty
-  - Casey S. Greene
-  - Stephanie C. Hicks
-  publisher: Cold Spring Harbor Laboratory
-  date: '2020-11-07'
-  link: https://doi.org/ghjkzq
-  id: doi:10.1101/2020.11.06.371963
-  thumbnail: https://www.biorxiv.org/content/biorxiv/early/2020/11/07/2020.11.06.371963/F4.medium.gif
+  - Yeongeun Kim
+  - Sudip Mondal
+  - Hwarang Shin
+  - Soonhyuk Tak
+  - Vu Hoang Minh Doan
+  - Junghwan Oh
+  - Hyun Wook Kang
+  publisher: ACS Biomaterials Science &amp; Engineering
+  date: '2025-05-08'
+  link: https://doi.org/g9k8cd
+  id: doi:10.1021/acsbiomaterials.5c00209
+  thumbnail: https://pubs.acs.org/cms/10.1021/acsbiomaterials.5c00209/asset/images/medium/ab5c00209_0009.gif
   tags:
   - cancer
-  - single cell
-  - ovarian cancer
+  - cancer therapy
+  - irradiation
+  - lasers
+  - tumors
 - title: Opportunities and obstacles for deep learning in biology and medicine
   authors:
   - Travers Ching
