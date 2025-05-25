@@ -10,7 +10,7 @@ title: News
 
 {% include centerer.html html=html %}
 
-<a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/nomad421?ref_src=twsrc%5Etfw">Tweets by nomad421</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/nomad421?ref_src=twsrc%5Etfw">Tweets by nomad421</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {:.center}
 
 <a href="https://twitter.com/nomad421?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @nomad421</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -21,4 +21,4 @@ title: News
 
 {% capture html %}
 <iframe width="600" height="400" src="https://www.youtube.com/embed/GMEHQQ7_4Yo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-{% endcapture %}
+{% endcapture %} -->
