@@ -15,12 +15,16 @@
     {% include tags.html tag=pub.year %}
   {% endcapture %}
 
+  {% capture row2_text %}
+  Cited by: {{ pub.cited_by }} | Year: {{ pub.year }}
+  {% endcapture %}
+
   {%- include card.html
       size=include.size
       heading=pub.title
       image=""
       link=""
       row1=pub.authors
-      row2="Cited by: " | append: pub.cited_by | append: " | Year: " | append: pub.year
+      row2=row2_text
   -%}
 {% endfor %}
