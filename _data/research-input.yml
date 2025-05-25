@@ -63,8 +63,6 @@
     - cancer
     - cancer therapy
     - irradiation
-    - lasers
-    - tumors
 
 - id: doi:10.1002/wnan.1504
   image: https://wires.onlinelibrary.wiley.com/cms/asset/5c226382-403d-45f8-9217-96a4b3177e2c/wnan1504-toc-0001-m.jpg
@@ -73,10 +71,50 @@
       link: https://doi.org/10.1101/142760
     - type: source
       link: http://github.com/greenelab/deep-review
+  tags:
+    - cancer
+    - cancer therapy
+    - irradiation
 
 - id: 10.1016/j.cis.2023.103013
   image: https://ars.els-cdn.com/content/image/1-s2.0-S000186862300180X-ga1.jpg
+  extra-links:
+    - type: manubot
+      link: https://greenelab.github.io/meta-review/
+  tags:
+    - cancer
+    - cancer therapy
+    - irradiation
+
+- id: doi:10.1002/agt2.70047
+  image: https://onlinelibrary.wiley.com/cms/asset/b9a9efeb-438a-429c-a0f8-fdca6601a20f/agt270047-fig-0001-m.png
   repo: greenelab/meta-review
   extra-links:
     - type: manubot
       link: https://greenelab.github.io/meta-review/
+  tags:
+    - cancer
+    - cancer therapy
+    - irradiation
+
+- id: doi:10.1039/C6RA28640B
+  image: https://pubs.rsc.org/image/article/2017/RA/c6ra28640b/c6ra28640b-f1.gif
+  repo: greenelab/meta-review
+  extra-links:
+    - type: manubot
+      link: https://greenelab.github.io/meta-review/
+  tags:
+    - cancer
+    - cancer therapy
+    - irradiation
+
+- id: doi:10.1016/j.ceramint.2019.12.042
+  image: https://www.mdpi.com/polymers/polymers-16-02818/article_deploy/html/images/polymers-16-02818-g001.png
+  repo: greenelab/meta-review
+  extra-links:
+    - type: manubot
+      link: https://greenelab.github.io/meta-review/
+  tags:
+    - cancer
+    - cancer therapy
+    - irradiation
