@@ -21,6 +21,6 @@
       image=""
       link=""
       row1=pub.authors
-      row2="Cited by: {{ pub.cited_by }} | Year: {{ pub.year }}"
+      row2="Cited by: " | append: pub.cited_by | append: " | Year: " | append: pub.year
   -%}
 {% endfor %}
