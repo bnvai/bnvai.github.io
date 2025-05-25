@@ -3,10 +3,10 @@ name: Update research data
 on:
   push:
     paths:
-      - "_data/research-input.yml"
+      - '_data/research-input.yml'
   pull_request:
     paths:
-      - "_data/research-input.yml"
+      - '_data/research-input.yml'
 
 jobs:
   update_research:
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.7
+          python-version: 3.10
       - name: Install Manubot
         run: pip install --upgrade manubot
       - name: Build updated research output file
@@ -26,5 +26,5 @@ jobs:
       - name: Commit new research output file
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          file_pattern: "_data/research-output.yml"
-          commit_message: "Update Manubot-generated citations in research data"
+          file_pattern: '_data/research-output.yml'
+          commit_message: 'Update Manubot-generated citations in research data'
