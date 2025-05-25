@@ -1,0 +1,10 @@
+<div class="carousel" id="{{ include.id }}">
+  <div class="slides">
+    {% for image in include.images %}
+      <img src="{{ image.url }}" alt="{{ image.alt }}" {% if forloop.first %}class="active"{% endif %}>
+    {% endfor %}
+  </div>
+  <button class="prev" onclick="prevSlide('{{ include.id }}')">&#10094;</button>
+  <button class="next" onclick="nextSlide('{{ include.id }}')">&#10095;</button>
+</div>
+  
