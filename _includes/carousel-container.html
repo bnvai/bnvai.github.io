@@ -1,0 +1,27 @@
+<div class="carousel-container">
+    <button class="carousel-btn prev" onclick="scrollCarousel(-1)">‹</button>
+  
+    <div class="carousel-track" id="carousel">
+      {% for pub in site.data.research-output %}
+        <div class="carousel-item">
+          <img src="{{ pub.image }}" alt="Image for {{ pub.title }}">
+          <div class="title">{{ pub.title }}</div>
+          <div class="authors">
+            {{ pub.authors | join: ', ' }}
+          </div>
+          <div class="publisher">{{ pub.publisher }}</div>
+          <a href="{{ pub.link }}" target="_blank">Read more</a>
+          <div class="tags">
+            {% for tag in pub.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  
+    <button class="carousel-btn next" onclick="scrollCarousel(1)">›</button>
+  </div>
+  
+  <script src="/assets/js/carousel.js"></script>
+  
