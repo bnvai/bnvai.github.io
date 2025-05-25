@@ -35,23 +35,21 @@
     link: https://doi.org/10.1101/142760
   - type: source
     link: http://github.com/greenelab/deep-review
-- title: Effect of microwave absorption properties and morphology of manganese dioxide
-    on catalytic oxidation of toluene under microwave irradiation
+- title: 'Hydroxyapatite: A journey from biomaterials to advanced functional materials'
   authors:
-  - Honghong Yi
-  - Lingling Song
-  - Xiaolong Tang
-  - Shunzheng Zhao
-  - Zhongyu Yang
-  - Xizhou Xie
-  - Chuanbo Ma
-  - Yuanyuan Zhang
-  - Xiaodong Zhang
-  publisher: Ceramics International
-  date: '2020-02-01'
-  link: https://doi.org/g9k8cv
-  id: doi:10.1016/j.ceramint.2019.10.020
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S0272884219329062-gr1.jpg
+  - Sudip Mondal
+  - Sumin Park
+  - Jaeyeop Choi
+  - Thi Thu Ha Vu
+  - Vu Hoang Minh Doan
+  - Truong Tien Vo
+  - Byeongil Lee
+  - Junghwan Oh
+  publisher: Advances in Colloid and Interface Science
+  date: '2023-11-01'
+  link: https://doi.org/gtr2kx
+  id: 10.1016/j.cis.2023.103013
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S000186862300180X-ga1.jpg
   repo: greenelab/meta-review
   extra-links:
   - type: manubot
@@ -60,46 +58,3 @@
     link: https://github.com/greenelab/meta-review
   - type: website
     link: http://manubot.org/
-- title: 'Hydroxyapatite Coated Iron Oxide Nanoparticles: A Promising Nanomaterial
-    for Magnetic Hyperthermia Cancer Treatment'
-  authors:
-  - Sudip Mondal
-  - Panchanathan Manivasagan
-  - Subramaniyan Bharathiraja
-  - Madhappan Santha Moorthy
-  - Van Nguyen
-  - Hye Kim
-  - Seung Nam
-  - Kang Lee
-  - Junghwan Oh
-  publisher: Nanomaterials
-  date: '2020-06-02'
-  link: https://doi.org/gcsrm6
-  id: doi:10.3390/nano7120426
-  image: https://pub.mdpi-res.com/nanomaterials/nanomaterials-07-00426/article_deploy/html/images/nanomaterials-07-00426-ag-550.jpg?1569706027
-  extra-links:
-  - type: manubot
-    link: https://greenelab.github.io/knowledge-graph-review/
-  tags:
-  - knowledge graphs
-- title: 'Editorial overview: Materials Engineering: Harnessing structural hierarchy
-    in bio-derived/bio-inspired materials for biomedical applications'
-  authors:
-  - Jeannine M Coburn
-  - David L Kaplan
-  publisher: Current Opinion in Chemical Engineering
-  date: '2019-06-01'
-  link: https://doi.org/g9k8cw
-  id: doi:10.1016/j.coche.2019.06.002
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S1773224719305064-fx1.jpg
-  extra-links:
-  - type: preprint
-    link: https://doi.org/10.7287/peerj.preprints.3100v1
-  - type: manubot
-    link: https://greenelab.github.io/scihub-manuscript/
-  - type: source
-    link: https://github.com/greenelab/scihub-manuscript
-    text: Manuscript source
-  - type: source
-    link: https://github.com/greenelab/scihub
-    text: Analyses source

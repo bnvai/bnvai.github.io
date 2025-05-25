@@ -65,8 +65,8 @@
     - type: source
       link: http://github.com/greenelab/deep-review
 
-- id: doi:10.1016/j.ceramint.2019.10.020
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S0272884219329062-gr1.jpg
+- id: 10.1016/j.cis.2023.103013
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S000186862300180X-ga1.jpg
   repo: greenelab/meta-review
   extra-links:
     - type: manubot
@@ -75,26 +75,3 @@
       link: https://github.com/greenelab/meta-review
     - type: website
       link: http://manubot.org/
-
-- id: doi:10.3390/nano7120426
-  image: https://pub.mdpi-res.com/nanomaterials/nanomaterials-07-00426/article_deploy/html/images/nanomaterials-07-00426-ag-550.jpg?1569706027
-  date: 2020-6-2
-  extra-links:
-    - type: manubot
-      link: https://greenelab.github.io/knowledge-graph-review/
-  tags:
-    - knowledge graphs
-
-- id: doi:10.1016/j.coche.2019.06.002
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S1773224719305064-fx1.jpg
-  extra-links:
-    - type: preprint
-      link: https://doi.org/10.7287/peerj.preprints.3100v1
-    - type: manubot
-      link: https://greenelab.github.io/scihub-manuscript/
-    - type: source
-      link: https://github.com/greenelab/scihub-manuscript
-      text: Manuscript source
-    - type: source
-      link: https://github.com/greenelab/scihub
-      text: Analyses source
