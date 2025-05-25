@@ -41,8 +41,6 @@
   - cancer
   - cancer therapy
   - irradiation
-  - lasers
-  - tumors
 - title: Recent progress on fabrication and drug delivery applications of nanostructured
     hydroxyapatite
   authors:
@@ -59,6 +57,10 @@
     link: https://doi.org/10.1101/142760
   - type: source
     link: http://github.com/greenelab/deep-review
+  tags:
+  - cancer
+  - cancer therapy
+  - irradiation
 - title: 'Hydroxyapatite: A journey from biomaterials to advanced functional materials'
   authors:
   - Sudip Mondal
@@ -78,3 +80,74 @@
   extra-links:
   - type: manubot
     link: https://greenelab.github.io/meta-review/
+  tags:
+  - cancer
+  - cancer therapy
+  - irradiation
+- title: "Hydrogel\u2010Based Smart Materials for Wound Healing and Sensing"
+  authors:
+  - Thi Kim Ngan Duong
+  - Thi Thuy Truong
+  - Thi Nhat Linh Phan
+  - Thi Xuan Nguyen
+  - Vu Hoang Minh Doan
+  - Truong Tien Vo
+  - Jaeyeop Choi
+  - Umapada Pal
+  - Prodyut Dhar
+  - Byeongil Lee
+  - Junghwan Oh
+  - Sudip Mondal
+  publisher: Aggregate
+  date: '2025-04-22'
+  link: https://doi.org/g9k8z3
+  id: doi:10.1002/agt2.70047
+  image: https://onlinelibrary.wiley.com/cms/asset/b9a9efeb-438a-429c-a0f8-fdca6601a20f/agt270047-fig-0001-m.png
+  repo: greenelab/meta-review
+  extra-links:
+  - type: manubot
+    link: https://greenelab.github.io/meta-review/
+  tags:
+  - cancer
+  - cancer therapy
+  - irradiation
+- title: Plasmon induced enhanced photocatalytic activity of gold loaded hydroxyapatite
+    nanoparticles for methylene blue degradation under visible light
+  authors:
+  - Sudip Mondal
+  - Ma. E. De Anda Reyes
+  - Umapada Pal
+  publisher: RSC Advances
+  date: '2017-01-01'
+  link: https://doi.org/g8xg3f
+  id: doi:10.1039/C6RA28640B
+  image: https://pubs.rsc.org/image/article/2017/RA/c6ra28640b/c6ra28640b-f1.gif
+  repo: greenelab/meta-review
+  extra-links:
+  - type: manubot
+    link: https://greenelab.github.io/meta-review/
+  tags:
+  - cancer
+  - cancer therapy
+  - irradiation
+- title: High-power impulse magnetron sputtering deposition of high crystallinity
+    vanadium dioxide for thermochromic smart windows applications
+  authors:
+  - Tuan Duc Vu
+  - Shiyu Liu
+  - Xianting Zeng
+  - Chuanchang Li
+  - Yi Long
+  publisher: Ceramics International
+  date: '2020-04-01'
+  link: https://doi.org/g9k8z4
+  id: doi:10.1016/j.ceramint.2019.12.042
+  image: https://www.mdpi.com/polymers/polymers-16-02818/article_deploy/html/images/polymers-16-02818-g001.png
+  repo: greenelab/meta-review
+  extra-links:
+  - type: manubot
+    link: https://greenelab.github.io/meta-review/
+  tags:
+  - cancer
+  - cancer therapy
+  - irradiation
