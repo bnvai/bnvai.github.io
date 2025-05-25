@@ -19,12 +19,10 @@
   Cited by: {{ pub.cited_by }} | Year: {{ pub.year }}
   {% endcapture %}
 
-  {%- include card.html
-      size=include.size
-      heading=pub.title
-      image=""
-      link=""
-      row1=pub.authors
-      row2=row2_text
+  {%- include pub-component.html
+    size=include.size
+    heading=pub.title
+    row1=pub.authors
+    row2=row2_text
   -%}
 {% endfor %}
