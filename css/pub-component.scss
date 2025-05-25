@@ -1,0 +1,34 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+
+.pub-component {
+    font-size: 1em;  // Mặc định, có thể override bằng inline style nếu muốn
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  
+    & .pub-title {
+      margin: 0 0 0.5rem 0;
+      color: #222;
+      font-weight: 600;
+    }
+  
+    & .pub-authors {
+      margin: 0 0 0.25rem 0;
+      font-style: italic;
+      color: #555;
+    }
+  
+    & .pub-info {
+      margin: 0;
+      color: #666;
+      font-size: 0.9em;
+    }
+  }
+  
