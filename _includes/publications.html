@@ -1,0 +1,26 @@
+{% assign publications = site.data.publications %}
+
+{% if include.year != nil %}
+  {% if include.year == "" %}
+    {% assign filtered_publications = publications %}
+  {% else %}
+    {% assign filtered_publications = publications | where: "year", include.year %}
+  {% endif %}
+{% else %}
+  {% assign filtered_publications = publications %}
+{% endif %}
+
+{% for pub in filtered_publications %}
+  {% capture tags %}
+    {% include tags.html tag=pub.year %}
+  {% endcapture %}
+
+  {%- include card.html
+      size=include.size
+      heading=pub.title
+      image=""
+      link=""
+      row1=pub.authors
+      row2="Cited by: {{ pub.cited_by }} | Year: {{ pub.year }}"
+  -%}
+{% endfor %}
