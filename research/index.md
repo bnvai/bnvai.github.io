@@ -29,4 +29,4 @@ Uses the _card_ component (small).
 
 ## Carousel
 
-{% include carousel.html %}
+{% include carousel-container.html %}
