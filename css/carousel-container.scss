@@ -6,7 +6,8 @@
 
 .carousel-container {
     position: relative;
-    max-width: 1200px;
+    width: 100vw;         // chiếm full chiều ngang màn hình
+    max-width: 100%;      // không vượt quá 100%
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
@@ -42,7 +43,7 @@
     }
   
     .carousel-item {
-      flex: 0 0 calc(25% - 1rem); // 4 items, minus gap
+      flex: 0 0 calc((100vw - 5rem) / 5); 
       scroll-snap-align: start;
       background: #fff;
       border: 1px solid #ddd;
@@ -59,6 +60,7 @@
         height: 140px;
         object-fit: cover; // ensures same aspect ratio
         border-radius: 4px;
+        display: block;
       }
   
       .title {
