@@ -8,7 +8,7 @@ The following software is primarily developed or maintained by the NanoBioMedici
 
 {%
   include gallery.html
-  image1="images/_IMG9828.png"
+  image1="images/spring.png"
   tooltip1="Spring"
   link1=""
   image2="images/activities1.png"
