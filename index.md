@@ -12,6 +12,7 @@ Join us as we explore the smallest scales to make the biggest impact on human he
 ## Upcomming Feature
 
 {% include carousel-container.html %}
+{% include centerer.html html=html %}
 
 <!-- section break -->
 
