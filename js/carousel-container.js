@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextBtn = document.querySelector('.carousel-btn.next');
 
   function scrollCarousel(direction) {
+    console.log('scrollCarousel');
     if (!carousel) return;
     const item = carousel.querySelector('.carousel-item');
     if (!item) return;
