@@ -48,8 +48,8 @@
   }
 
   .carousel-item {
-    flex: 0 0 calc(100% / 4); // Each item takes up 25% of the container (4 items per view)
-    max-width: calc(100% / 4); // Prevent shrinking beyond 25%
+    flex: 0 0 100%; // Each item takes up 25% of the container (4 items per view)
+    max-width: 100%; // Prevent shrinking beyond 25%
     scroll-snap-align: start; // Align items to start when scrolling
     background: #fff;
     border: 1px solid #ddd;
@@ -60,6 +60,21 @@
     flex-direction: column;
     justify-content: flex-start;
     height: 100%; // Maintain consistent height
+
+    @media (min-width: $phone) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    @media (min-width: $tablet) {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  
+    @media (min-width: $page) {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
 
     img {
       width: 100%;
