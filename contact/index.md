@@ -20,7 +20,7 @@ We are located on the 2rd floor of the Ungbi building.
 <a href="mailto:bangnv.bk5139@gmail.com">
   <span class="codedirection">moc.liamg@9351kb.vngnab</span>
 </a>
-{% include centerer.html html=html %}
+{:.center}
 
 <!-- section break -->
 

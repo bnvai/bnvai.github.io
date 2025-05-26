@@ -1,4 +1,3 @@
-
 Welcome to the Nano Bio Medical Innovation Lab
 
 At the forefront of interdisciplinary research, the Nano Bio Medical Innovation Lab is dedicated to pioneering breakthroughs at the intersection of nanotechnology, biology, and medicine. Our mission is to develop innovative solutions that address critical challenges in healthcare, from early disease detection to targeted drug delivery and regenerative medicine.
@@ -35,8 +34,8 @@ A _feature_ component, with an image, a heading, markdown text, and an optional 
 Useful for your home page, where you want to highlight key points about your lab.
 
 {% capture text %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Nec sagittis aliquam malesuada bibendum arcu.
+In the pursuit of excellence, one must embrace both effort and resilience, for through dedication comes great achievement.
+Strength and grace are woven together, guiding us toward growth and success.
 {% endcapture %}
 {%
   include feature.html
@@ -47,8 +46,8 @@ Nec sagittis aliquam malesuada bibendum arcu.
 %}
 
 {% capture text %}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Nec sagittis aliquam malesuada bibendum arcu.
+In the pursuit of excellence, one must embrace both effort and resilience, for through dedication comes great achievement.
+Strength and grace are woven together, guiding us toward growth and success.
 {% endcapture %}
 {%
   include feature.html
