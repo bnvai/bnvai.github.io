@@ -27,7 +27,7 @@ jobs:
         run: python _data/build-research.py
 
       - name: Delete existing artifact if exists
-        uses: stefanzweifel/delete-artifacts@v1
+        uses: geekyeggo/delete-artifact@v5
         with:
           name: research-output
           failOnError: false

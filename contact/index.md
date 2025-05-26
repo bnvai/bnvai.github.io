@@ -9,6 +9,8 @@ We are located on the 2rd floor of the Ungbi building.
 
 {% include figure.html image="images/pknu.jpg" width="100%" %}
 
+<!-- section break -->
+
 ## <i class="fas fa-envelope"></i>Email
 
 <style type="text/css">
@@ -19,10 +21,14 @@ We are located on the 2rd floor of the Ungbi building.
   <span class="codedirection">moc.liamg@9351kb.vngnab</span>
 </a>
 
+<!-- section break -->
+
 ## <i class="fas fa-phone"></i>Phone
 
 [+82 051-629-5771](tel:+82 051-629-5771)
 {:.center}
+
+<!-- section break -->
 
 ## <i class="fas fa-address-card"></i>Address
 
@@ -36,7 +42,7 @@ Pukyong National University (PKNU)
 Room 1202, Ungbi building (A12),
 45, Yongso-ro, Nam-gu, (Pukyong National University)
 Busan, South Korea, 48513
-{:.center}
+{% include centerer.html html=html %}
 
 [<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps?rlz=1C1GCER_en&um=1&ie=UTF-8&fb=1&gl=kr&sa=X&geocode=KR2fN91q7Gg1MbEFhMSgzbwy&daddr=Busan,+Nam-gu,+Yongso-ro,+45)
 {:.center}
