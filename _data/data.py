@@ -3,17 +3,17 @@ import yaml
 
 data_list = []
 
-# Thay user_id này bằng ID trong URL Google Scholar
+# user ID in URL Google Scholar
 user_id = "ALvh9nYAAAAJ"
 
-# Lấy thông tin profile và bài báo
+# Get profile and paper
 author = scholarly.search_author_id(user_id)
 author_filled = scholarly.fill(author, sections=["publications"])
 
 print(f"\nAuthor: {author_filled['name']}")
 print(f"Total publications: {len(author_filled['publications'])}\n")
 
-# Duyệt qua từng bài báo
+# Loop
 for pub in author_filled['publications']:
     pub_filled = scholarly.fill(pub)
     title = pub_filled['bib'].get('title', 'N/A')
@@ -27,6 +27,6 @@ for pub in author_filled['publications']:
         'year': year
     })
 
-# ✅ Lưu ra file YAML để dùng với Jekyll (_data/publications.yml)
+# ✅ Save on file YAML for using in Jekyll (_data/publications.yml)
 with open('_data/publications.yml', 'w', encoding='utf-8') as f:
     yaml.dump(data_list, f, allow_unicode=True, sort_keys=False)
