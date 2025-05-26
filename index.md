@@ -1,72 +1,17 @@
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/), with automatic citations, GitHub tag imports, pre-built components, and more.
-Spend less time reinventing the wheel, and more time running your lab.
+Welcome to the Nano Bio Medical Innovation Lab
 
-{% include big-link.html icon="fab fa-github" text="See the template and readme on GitHub" link="https://github.com/greenelab/lab-website-template" %}{:.center}
+At the forefront of interdisciplinary research, the Nano Bio Medical Innovation Lab is dedicated to pioneering breakthroughs at the intersection of nanotechnology, biology, and medicine. Our mission is to develop innovative solutions that address critical challenges in healthcare, from early disease detection to targeted drug delivery and regenerative medicine.
+
+Combining cutting-edge nanomaterials, advanced bioengineering techniques, and biomedical insights, we strive to bridge the gap between fundamental research and real-world clinical applications. Our team brings together passionate scientists, engineers, and clinicians working collaboratively to transform the future of diagnostics and therapeutics.
+
+Join us as we explore the smallest scales to make the biggest impact on human health.
 
 <!-- section break -->
 
-## Basic Formatting
+## Upcomming Feature
 
-_italic text_
-
-**bold text**
-
-A centered paragraph with `{:.center}`.  
-Other elements can also be centered in the same way.
-{:.center}
-
-- list item 1
-- list item 2
-- list item 3
-
-Horizontal rule:
-
----
-
-| TABLE | Game 1 | Game 2 | Game 3 | Total |
-| ----- | :----: | :----: | :----: | :---: |
-| Anna  |  144   |  123   |  218   |  485  |
-| Bill  |   90   |  175   |  120   |  385  |
-| Cara  |  102   |  214   |  233   |  549  |
-
-```javascript
-// a code block with syntax highlighting
-const popup = document.querySelector("#popup");
-popup.style.width = "100%";
-popup.innerText =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-```
-
-This sentence has `inline code`, useful for making references to variables, packages, versions, etc within a sentence.
-
----
-
-Linking to pages within the site:
-
-{% comment %}
-Don't put a slash before the page you want to link to. This makes it relative to
-the current page rather than the root, ensuring your links will work regardless
-of your site's baseurl.
-
-For example, if you link to [Team](/team) and your site is hosted at 
-your-lab.github.io/lab-website, that link would lead to
-your-lab.github.io/team instead of your-lab.github.io/lab-website/team.
-
-If you have a more complex folder hierarchy, you may also need to use the Jekyll
-relative_url filter when linking to pages:
-https://jekyllrb.com/docs/liquid/filters/
-{% endcomment %}
-
-[Home page]()  
-[Team page](team)  
-[Blog page](blog)  
-
----
-
-Put in a `<!-- section break -->` where you want to start a new section.
-Sections are the alternating white and light-gray backgrounds that span the entire width of the page.
-We recommend putting a section break before every `# Heading 1` and `## Heading 2`.
+{% include carousel-container.html %}
 
 <!-- section break -->
 
@@ -80,40 +25,6 @@ Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
 Sapien nec sagittis aliquam malesuada.
 Non odio euismod lacinia at quis risus sed vulputate.
 Laoreet id donec ultrices tincidunt arcu non sodales neque.
-
-### Heading 3
-
-Enim ut sem viverra aliquet eget sit amet tellus.
-Commodo ullamcorper a lacus vestibulum sed arcu non.
-Vitae auctor eu augue ut lectus arcu bibendum.
-Sapien pellentesque habitant morbi tristique senectus et netus.
-Pulvinar proin gravida hendrerit lectus.
-Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla.
-
-#### Heading 4
-
-Tristique nulla aliquet enim tortor at auctor.
-Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.
-Vulputate sapien nec sagittis aliquam malesuada bibendum.
-Volutpat blandit aliquam etiam erat.
-Varius quam quisque id diam.
-Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.
-Pharetra et ultrices neque ornare aenean euismod elementum nisi.
-
-<!-- section break -->
-
-## Centerer
-
-A _centerer_ component, an alternative method for centering arbitrary items that can't be centered with `{:.center}`, such as groups of pre-built components or manually-written HTML elements:
-
-{% capture html %}
-
-<div>item 1</div>
-<div>item 2</div>
-<div>item 3</div>
-{% endcapture %}
-
-{% include centerer.html html=html spaced=true %}
 
 <!-- section break -->
 
@@ -160,20 +71,6 @@ A _figure_ component with optional caption and image link.
   link="team"
 %}
 
-{%
-  include figure.html
-  image="images/bacteria.jpg"
-  caption="A full-width figure"
-  width="100%"
-%}
-
-{%
-  include figure.html
-  image="images/bacteria.jpg"
-  caption="A flat figure, without the effects. Useful for transparent images that you want to blend in with the background."
-  flat="true"
-%}
-
 <!-- section break -->
 
 ## Gallery
@@ -217,38 +114,6 @@ Useful for transparent images, and images that should not be cropped, like logos
 
 ## Card
 
-A multi-size, flexible _card_ component, with an image, a title link, markdown text, and extra rows for special items such as tags.
-
-{% capture tags %}
-{% include tags.html tags="red, hammer, elephant, supercalifragilisticexpialidocious" %}
-{% endcapture %}
-
-{% capture largecards %}
-{%
-  include card.html
-  size="large"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
-  heading="Large card"
-  truncate=2
-  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
-  row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
-%}
-{% capture html %}
-An example of putting other components in a row:
-{% endcapture %}
-{%
-  include card.html
-  size="large"
-  image="images/typo-in-filename-whoops.jpg"
-  row1="A card with a placeholder image in case the specified image can't be loaded"
-  row2=tags
-%}
-{% endcapture %}
-
-{% include centerer.html html=largecards %}
-
 {% capture mediumcards %}
 {%
   include card.html
@@ -279,30 +144,13 @@ An example of putting other components in a row:
 
 {% include centerer.html html=mediumcards %}
 
-{%
-  include card.html
-  size="small"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
-  heading="Small card"
-  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
-  row2=tags
-%}
-{%
-  include card.html
-  size="small"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
-  heading="Small card"
-  truncate=1
-  row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In aliquam sem fringilla ut."
-%}
-
 <!-- section break -->
 
-## Big Link
+## Join Our Team
 
-A _big link_ component, useful for emphasizing important links, such as other key pages on your site that aren't in the top nav bar.
+Are you passionate about innovation in nanotechnology, biotechnology, or medical research? Whether you're a student, researcher, or industry partner, we're always open to new ideas and meaningful collaborations.
+
+Let's work together to shape the future of healthcare.
 
 {% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="join" -%}
 {%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="collaborators" -%}
@@ -310,25 +158,7 @@ A _big link_ component, useful for emphasizing important links, such as other ke
 
 <!-- section break -->
 
-## Tags
-
-A _tags_ component.
-Provide your own list of tags (as an array or as a comma-separated string), and/or provide a GitHub repo and its "tags" (GitHub calls them [topics](https://github.com/topics)) will be fetched automatically!
-You can include this as part of other components, such as the _card_ component.
-
-{%
-  include tags.html
-  tags="ovarian cancer, dataset, gene expression"
-  repo="greenelab/lab-website-template"
-%}
-
-<!-- section break -->
-
 ## Social Link
-
-A customizable _social link_ component, with icon and tooltip.
-Specify custom links, or leave blank to use site defaults in `_config.yml`.
-To see the built-in links and add your own, see `/_includes/social-link.html`.
 
 {% capture html %}
 {% include social-link.html type="website" link=page.website %}
@@ -342,106 +172,3 @@ To see the built-in links and add your own, see `/_includes/social-link.html`.
 {% endcapture %}
 
 {% include centerer.html html=html %}
-
-<!-- section break -->
-
-## Paper Link
-
-A customizable _paper link_ component, with icon and text.
-Useful for showing supplementary links for a paper.
-To see the built-in links and add your own, see `/_includes/paper-link.html`.
-
-{% capture html %}
-{% include paper-link.html type="website" link="https://greenelab.com/" %}
-{% include paper-link.html type="journal" link="https://greenelab.com/" %}
-{% include paper-link.html type="preprint" link="https://greenelab.com/" %}
-{% include paper-link.html type="app" %}
-{% include paper-link.html type="data" text="Server" %}
-{% endcapture %}
-
-{% include centerer.html html=html %}
-
-<!-- section break -->
-
-## Role
-
-A customizable _role_ component, with an icon and optional text, useful for quickly indicating what different team members do.
-To see the built-in roles and add your own, see `/_includes/role.html`.
-
-{% capture html %}
-{%
-  include role.html
-  type="pi"
-  text=true
-%}
-{%
-  include role.html
-  type="phd"
-  text=true
-%}
-{%
-  include role.html
-  type="programmer"
-  text=true
-%}
-{%
-  include role.html
-  type="pi"
-%}
-{%
-  include role.html
-  type="phd"
-%}
-{%
-  include role.html
-  type="programmer"
-%}
-{% endcapture %}
-
-{% include centerer.html html=html spaced=true %}
-
-<!-- section break -->
-
-## Portrait
-
-A multi-size _portrait_ component with an image, link, name, and role icon, useful for team member links.
-
-{% capture html %}
-{%
-  include portrait.html
-  link="members/anne-chovie"
-  image="images/corgi.jpg"
-  name="Anne Chovie"
-  role="programmer"
-%}
-{%
-  include portrait.html
-  image="images/labrador.jpg"
-  name="Felix Cited"
-  role="pi"
-  mini=true
-%}
-{%
-  include portrait.html
-  mini=true
-%}
-{% endcapture %}
-
-{% include centerer.html html=html %}
-
-<!-- section break -->
-
-## Font Awesome Icons
-
-[Font Awesome](https://fontawesome.com/) is a large library of beautiful, clean, consistent, professionally-designed icons.
-[Find the icon you want](https://fontawesome.com/icons?d=gallery&q=icon&m=free), and paste its HTML code right into your markdown:
-
-<i class="fas fa-flask"></i>
-<i class="fas fa-microscope"></i>
-<i class="fas fa-glasses"></i>
-<i class="fas fa-vial"></i>
-<i class="fas fa-bacteria"></i>
-<i class="fas fa-virus"></i>
-
-Use the same [style](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) of icon across your site to maintain a consistent look.
-See the [styling section](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons) of their docs to see some of the easy ways you can modify the look of the icons.
