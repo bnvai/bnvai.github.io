@@ -10,12 +10,12 @@
   @include trim-margins;
 
   position: relative;
-  width: calc(#{$page} - 4rem);
+  width: #{$page};
   height: 300px;
   max-width: 100%;
   // margin: auto;
   overflow: hidden;
-  padding: 0 2rem;
+  // padding: 0 2rem;
 
   .carousel-btn {
     position: absolute;
@@ -42,7 +42,7 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    // gap: 1rem;
+    gap: 1rem;
     padding: 1rem 0;
     scroll-snap-type: x mandatory;
 
@@ -58,7 +58,7 @@
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: 0 0.5rem; // Horizontal padding to simulate spacing (instead of using `gap`)
+    // padding: 0 0.5rem; // Horizontal padding to simulate spacing (instead of using `gap`)
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -66,18 +66,18 @@
     height: 100%; // Maintain consistent height
 
     @media (min-width: $phone) {
-      flex: 0 0 50%;
-      max-width: 50%;
+      flex: 0 0 calc((100% - 1rem) / 2);
+      max-width: calc((100% - 1rem) / 2);
     }
 
     @media (min-width: $tablet) {
-      flex: 0 0 33.3333%;
-      max-width: 33.3333%;
+      flex: 0 0 calc((100% - 2rem) / 3);
+      max-width: calc((100% - 2rem) / 3);
     }
 
     @media (min-width: $page) {
-      flex: 0 0 25%;
-      max-width: 25%;
+      flex: 0 0 calc((100% - 3rem) / 4);
+      max-width: calc((100% - 3rem) / 4);
     }
 
     img {
