@@ -7,21 +7,23 @@ title: Activities
 The following software is primarily developed or maintained by the NanoBioMedicineInno Lab
 
 {%
-include gallery.html
-image1="images/activities2.jpg"
-
-  <!-- link1="https://cell.com/" -->
-
-image2="images/\_IMG9828.png"
-tooltip2="Wedding Party"
-image3="images/IMG_5187.png"
-
-  <!-- link3="https://cell.com/" -->
-
-image4="images/IMG_5179.png"
-image5="images/IMG_4259.png"
-image1="images/activities1.jpg"
+  include gallery.html
+  image1="images/_IMG9828.png"
+  tooltip1="Spring"
+  link1=""
+  image2="images/activities1.png"
+  tooltip2="Graduation"
+  image3="images/activities2.jpg"
+  tooltip3="Hike"
+  link3=""
+  image4="images/IMG_4259.png"
+  image5="images/activities3.jpg"
+  image6="images/IMG_5179.png"
+  tooltip4="Wedding"
+  link4=""
 %}
+
+<!-- section break -->
 
 {% assign images = site.data.images %}
 
