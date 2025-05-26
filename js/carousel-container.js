@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const item = carousel.querySelector('.carousel-item');
     if (!item) return;
 
-    const gap = parseInt(getComputedStyle(carousel).gap) || 0;
-    const scrollAmount = item.offsetWidth + gap;
+    const style = getComputedStyle(item);
+    const marginRight = parseFloat(style.marginRight || 0);
+    const scrollAmount = item.offsetWidth + marginRight;
     carousel.scrollBy({
       left: direction * scrollAmount,
       behavior: 'smooth',

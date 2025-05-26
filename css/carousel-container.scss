@@ -1,111 +1,114 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .carousel-container {
-    position: relative;
-    width: 100vw;         // chiếm full chiều ngang màn hình
-    max-width: 100%;      // không vượt quá 100%
-    margin: auto;
-    overflow: hidden;
-    padding: 0 2rem;
-  
-    .carousel-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 10;
-      background: rgba(0, 0, 0, 0.4);
-      color: #fff;
-      border: none;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      font-size: 1.5rem;
-      border-radius: 50%;
-      &.prev { left: 0; }
-      &.next { right: 0; }
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    &.prev {
+      left: 0;
     }
-  
-    .carousel-track {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      gap: 1rem;
-      padding: 1rem 0;
-      scroll-snap-type: x mandatory;
-  
-      &::-webkit-scrollbar {
-        display: none;
-      }
-    }
-  
-    .carousel-item {
-      flex: 0 0 25%;            // Each item takes up 25% of the container (4 items per view)
-      max-width: 25%;           // Prevent shrinking beyond 25%
-      scroll-snap-align: start; // Align items to start when scrolling
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 0 0.5rem;         // Horizontal padding to simulate spacing (instead of using `gap`)
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 100%;             // Maintain consistent height
-    
-      img {
-        width: 100%;
-        height: 140px;
-        object-fit: cover; // ensures same aspect ratio
-        border-radius: 4px;
-        display: block;
-      }
-  
-      .title {
-        font-weight: bold;
-        font-size: 0.9rem;
-        margin: 8px 0;
-        line-height: 1.2em;
-        height: 2.4em; // max 2 lines
-        overflow: hidden;
-      }
-  
-      .authors {
-        font-style: italic;
-        font-size: 0.75rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-  
-      .publisher {
-        font-size: 0.75rem;
-        margin-top: 0.25rem;
-        color: #666;
-      }
-  
-      .tags {
-        margin-top: auto;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-        font-size: 0.7rem;
-  
-        span {
-          background: #f0f0f0;
-          padding: 2px 6px;
-          border-radius: 3px;
-        }
-      }
-  
-      a {
-        font-size: 0.75rem;
-        color: #007acc;
-        margin-top: 6px;
-      }
+    &.next {
+      right: 0;
     }
   }
-  
+
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    // gap: 1rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .carousel-item {
+    flex: 0 0 calc(100% / 4); // Each item takes up 25% of the container (4 items per view)
+    max-width: calc(100% / 4); // Prevent shrinking beyond 25%
+    scroll-snap-align: start; // Align items to start when scrolling
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 0.5rem; // Horizontal padding to simulate spacing (instead of using `gap`)
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%; // Maintain consistent height
+
+    img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover; // ensures same aspect ratio
+      border-radius: 4px;
+      display: block;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin: 8px 0;
+      line-height: 1.2em;
+      height: 2.4em; // max 2 lines
+      overflow: hidden;
+    }
+
+    .authors {
+      font-style: italic;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .publisher {
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      color: #666;
+    }
+
+    .tags {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      font-size: 0.7rem;
+
+      span {
+        background: #f0f0f0;
+        padding: 2px 6px;
+        border-radius: 3px;
+      }
+    }
+
+    a {
+      font-size: 0.75rem;
+      color: #007acc;
+      margin-top: 6px;
+    }
+  }
+}
