@@ -22,8 +22,22 @@ jobs:
           python-version: '3.10'
       - name: Install Manubot
         run: pip install --upgrade manubot
+
       - name: Build updated research output file
         run: python _data/build-research.py
+
+      - name: Delete existing artifact if exists
+        uses: stefanzweifel/delete-artifacts@v1
+        with:
+          name: research-output
+          failOnError: false
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: research-output
+          path: _data/research-output.yml
+
       - name: Commit new research output file
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
