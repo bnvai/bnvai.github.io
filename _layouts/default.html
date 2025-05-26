@@ -1,14 +1,23 @@
 <html>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-Z824LPD900"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z824LPD900');
+  </script>
   {% include head.html %}
   <body>
     {% include header.html %}
     <main>{% include content.html content=content %}</main>
-    {% include button.html
-      label="⬆"
-      title="Top"
-      id="scrollToTopBtn"
-      class="button fixed-bottom-right"
-    %}
-    {% include footer.html %}
+    {% include button.html label="⬆" title="Top" id="scrollToTopBtn"
+    class="button fixed-bottom-right" %} {% include footer.html %}
   </body>
 </html>
