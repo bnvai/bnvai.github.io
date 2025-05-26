@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const style = getComputedStyle(item);
     const marginRight = parseFloat(style.marginRight || 0);
     const scrollAmount = item.offsetWidth + marginRight;
+
+    console.log('scrollAmount:', scrollAmount, 'direction:', direction);
+
     carousel.scrollBy({
       left: direction * scrollAmount,
       behavior: 'smooth',
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (prevBtn) {
     prevBtn.addEventListener('click', function (e) {
       e.preventDefault();
+      console.log('Prev button clicked');
       scrollCarousel(-1);
     });
   }
@@ -27,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (nextBtn) {
     nextBtn.addEventListener('click', function (e) {
       e.preventDefault();
+      console.log('Next button clicked');
       scrollCarousel(1);
     });
   }
