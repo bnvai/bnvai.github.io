@@ -52,8 +52,8 @@
   }
 
   .carousel-item {
-    flex: 0 0 100%; // Each item takes up 25% of the container (4 items per view)
-    max-width: 100%; // Prevent shrinking beyond 25%
+    flex: 0 0 100%;
+    max-width: 100%;
     scroll-snap-align: start; // Align items to start when scrolling
     background: #fff;
     border: 1px solid #ddd;
@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100%;
+    height: 250px;
 
     @media (min-width: $phone) {
       flex: 0 0 calc((100% - 1rem) / 2);
