@@ -6,12 +6,12 @@
 
 .carousel-container {
   @include flex-center;
-  margin: 40px 0;
+  margin: 20px 0;
   @include trim-margins;
 
   position: relative;
   width: #{$page};
-  height: 300px;
+  height: 450px;
   max-width: 100%;
   // margin: auto;
   overflow: hidden;
@@ -42,7 +42,7 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem 0;
     scroll-snap-type: x mandatory;
 
@@ -58,31 +58,30 @@
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 6px;
-    // padding: 0 0.5rem; // Horizontal padding to simulate spacing (instead of using `gap`)
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 250px;
+    height: 450px;
 
     @media (min-width: $phone) {
-      flex: 0 0 calc((100% - 1rem) / 2);
-      max-width: calc((100% - 1rem) / 2);
+      flex: 0 0 calc((100% - 0.5rem) / 2);
+      max-width: calc((100% - 0.5rem) / 2);
     }
 
     @media (min-width: $tablet) {
-      flex: 0 0 calc((100% - 2rem) / 3);
-      max-width: calc((100% - 2rem) / 3);
+      flex: 0 0 calc((100% - 1rem) / 3);
+      max-width: calc((100% - 1rem) / 3);
     }
 
     @media (min-width: $page) {
-      flex: 0 0 calc((100% - 3rem) / 4);
-      max-width: calc((100% - 3rem) / 4);
+      flex: 0 0 calc((100% - 2rem) / 4);
+      max-width: calc((100% - 2rem) / 4);
     }
 
     img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       object-fit: cover; // ensures same aspect ratio
       border-radius: 4px;
       display: block;
