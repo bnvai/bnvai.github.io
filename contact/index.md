@@ -17,8 +17,8 @@ We are located on the 2rd floor of the Ungbi building.
    span.codedirection { unicode-bidi:bidi-override; direction: rtl; }
 </style>
 
-<a href="mailto:bangnv.bk5139@gmail.com">
-  <span class="codedirection">moc.liamg@9351kb.vngnab</span>
+<a href="mailto:smondal@pknu.ac.kr">
+  <span class="codedirection">rk.ca.unkp@ladnoms</span>
 </a>
 {:.center}
 
