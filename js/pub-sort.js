@@ -1,23 +1,32 @@
-function sortPubs(criteria) {
-  const container = document.getElementById('pub-list');
-  const items = Array.from(container.getElementsByClassName('pub-wrapper'));
-
-  items.sort((a, b) => {
-    let valA = parseInt(a.dataset[criteria]) || 0;
-    let valB = parseInt(b.dataset[criteria]) || 0;
-    return valB - valA; // Decreasing order
-  });
-
-  items.forEach((item) => container.appendChild(item));
-}
-
 document.addEventListener('DOMContentLoaded', function () {
-  document
-    .getElementById('sort-citedby')
-    .addEventListener('click', function () {
+  const container = document.getElementById('pub-list');
+  const sortCitedByBtn = document.getElementById('sort-citedby');
+  const sortYearBtn = document.getElementById('sort-year');
+
+  function sortPubs(criteria) {
+    if (!container) return;
+
+    const items = Array.from(container.getElementsByClassName('pub-wrapper'));
+    items.sort((a, b) => {
+      const valA = parseInt(a.dataset[criteria]) || 0;
+      const valB = parseInt(b.dataset[criteria]) || 0;
+      return valB - valA; // sort giảm dần
+    });
+
+    items.forEach((item) => container.appendChild(item));
+  }
+
+  if (sortCitedByBtn) {
+    sortCitedByBtn.addEventListener('click', function (e) {
+      e.preventDefault();
       sortPubs('cited_by');
     });
-  document.getElementById('sort-year').addEventListener('click', function () {
-    sortPubs('year');
-  });
+  }
+
+  if (sortYearBtn) {
+    sortYearBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      sortPubs('year');
+    });
+  }
 });
