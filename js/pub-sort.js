@@ -27,10 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       return valB - valA; // sort giảm dần
     });
 
-    items.forEach((item, idx) => {
-      console.log(`Appending item ${idx} with ${criteria}:`, item.dataset[criteria]);
-      container.appendChild(item);
-    });
+    items.forEach((item) => container.appendChild(item));
   }
 
   if (sortCitedByBtn) {
