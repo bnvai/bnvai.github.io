@@ -2,7 +2,7 @@
 title: Activities
 ---
 
-# Activities
+<i class="fas fa-photo-film"></i>Activities
 
 The following software is primarily developed or maintained by the NanoBioMedicineInno Lab
 
