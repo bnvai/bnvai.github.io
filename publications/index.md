@@ -12,6 +12,12 @@ Our publications reflect the cutting-edge research and interdisciplinary innovat
 
 Explore our latest publications to learn more about our discoveries and how they shape the future of nano-biomedical science.
 
+## Publication Search
+
+{% include card-search.html subject="papers" %}
+
+<!-- section break -->
+
 {% include pub-sort.html %}
 
 {% include publications.html %}
