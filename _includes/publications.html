@@ -9,5 +9,5 @@ publications %} {% endif %}
   tag=pub.year %} {% endcapture %} {% capture row2_text %} Cited by: {{
   pub.cited_by }} | Year: {{ pub.year }} {% endcapture %} {%- include
   pub-component.html size=include.size heading=pub.title row1=pub.authors
-  row2=row2_text index=forloop.index -%} {% endfor %}
+  row2=row2_text index=forloop.index year=pub.year cited_by=pub.cited_by -%} {% endfor %}
 </div>
