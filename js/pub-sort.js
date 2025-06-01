@@ -9,10 +9,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateIndexes() {
     const items = Array.from(container.getElementsByClassName('pub-component'));
+    console.log('🔄 Updating indexes for', items.length, 'items');
+
     items.forEach((item, idx) => {
       const indexSpan = item.querySelector('.pub-index');
       if (indexSpan) {
-        indexSpan.textContent = `${idx + 1}. `;
+        const newIndex = `${idx + 1}. `;
+        console.log(`➡️ Setting index for item at position ${idx}: ${newIndex}`);
+        indexSpan.textContent = newIndex;
+      } else {
+        console.warn(`⚠️ No .pub-index span found in item at position ${idx}`);
       }
     });
   }
