@@ -5,7 +5,7 @@ function sortPubs(criteria) {
   items.sort((a, b) => {
     let valA = parseInt(a.dataset[criteria]) || 0;
     let valB = parseInt(b.dataset[criteria]) || 0;
-    return valB - valA; // Sắp xếp giảm dần
+    return valB - valA; // Decreasing order
   });
 
   items.forEach((item) => container.appendChild(item));

@@ -4,14 +4,14 @@
 
 <!-- set dummy functions in case third party scripts cant load to avoid errors -->
 <script>
-  if (typeof Popper === "undefined") {
+  if (typeof Popper === 'undefined') {
     Popper = {
       createPopper: () => {
         destroy: () => null;
       },
     };
   }
-  if (typeof Mark === "undefined")
+  if (typeof Mark === 'undefined')
     Mark = {
       unmark: () => null,
       mark: () => null,
@@ -26,3 +26,4 @@
 <script src="{{ 'js/button.js' | relative_url }}"></script>
 <script src="{{ 'js/carousel.js' | relative_url }}"></script>
 <script src="{{ 'js/carousel-container.js' | relative_url }}"></script>
+<script src="{{ 'js/pub-sort.js' | relative_url }}"></script>
