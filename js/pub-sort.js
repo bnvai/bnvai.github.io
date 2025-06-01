@@ -7,6 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log('sortCitedByBtn:', sortCitedByBtn);
   console.log('sortYearBtn:', sortYearBtn);
 
+  function updateIndexes() {
+    const items = Array.from(container.getElementsByClassName('pub-component'));
+    items.forEach((item, idx) => {
+      const indexSpan = item.querySelector('.pub-index');
+      if (indexSpan) {
+        indexSpan.textContent = `${idx + 1}. `;
+      }
+    });
+  }
+
   function sortPubs(criteria) {
     if (!container) {
       console.warn('Container not found!');
@@ -45,4 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
       sortPubs('year');
     });
   }
+
+  updateIndexes();
 });
