@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const valA = parseInt(a.dataset[criteria]) || 0;
       const valB = parseInt(b.dataset[criteria]) || 0;
       console.log(`Compare: ${valB} vs ${valA}`);
-      return valB - valA; // sort giảm dần
+      return valB - valA; // decrease sort
     });
 
     items.forEach((item) => container.appendChild(item));
+
+    updateIndexes();
   }
 
   if (sortCitedByBtn) {
@@ -61,6 +63,4 @@ document.addEventListener('DOMContentLoaded', function () {
       sortPubs('year');
     });
   }
-
-  updateIndexes();
 });
