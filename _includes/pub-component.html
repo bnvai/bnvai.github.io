@@ -1,6 +1,8 @@
-<div class="pub-component" style="font-size: {{ include.size | default: '1em' }};">
-    <h3 class="pub-title">{{ include.heading }}</h3>
-    <p class="pub-authors">{{ include.row1 }}</p>
-    <p class="pub-info">{{ include.row2 }}</p>
-  </div>
-  
+<div
+  class="pub-component"
+  style="font-size: {{ include.size | default: '1em' }};"
+>
+  <h3 class="pub-title">{{ include.index }}. {{ include.heading }}</h3>
+  <p class="pub-authors">{{ include.row1 }}</p>
+  <p class="pub-info">{{ include.row2 }}</p>
+</div>
