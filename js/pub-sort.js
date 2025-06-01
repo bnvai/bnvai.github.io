@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function sortPubs(criteria) {
     if (!container) return;
 
-    const items = Array.from(container.getElementsByClassName('pub-wrapper'));
+    const items = Array.from(container.getElementsByClassName('pub-component'));
     items.sort((a, b) => {
       const valA = parseInt(a.dataset[criteria]) || 0;
       const valB = parseInt(b.dataset[criteria]) || 0;
