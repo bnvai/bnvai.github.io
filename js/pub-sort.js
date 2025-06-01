@@ -63,4 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
       sortPubs('year');
     });
   }
+
+  // ✅ Gọi khi DOM đã sẵn sàng
+  updateIndexes();
 });
