@@ -31,18 +31,17 @@ We are located on the 2rd floor of the Ungbi building.
 
 <!-- section break -->
 
-## <i class="fas fa-address-card"></i>Address
+## <i class="fas fa-address-card"></i> Address
 
-{% comment %}
-Tip: put both a mailing address for mail/deliveries, AND a navigation-friendly address so people can find their way to you easily.
-{% endcomment %}
-
+{% capture html %}
 Department of Biomedical Engineering
 Pukyong National University (PKNU)
 
 Room 1202, Ungbi building (A12),
 45, Yongso-ro, Nam-gu, (Pukyong National University)
 Busan, South Korea, 48513
+{% endcapture %}
+
 {% include centerer.html html=html %}
 
 [<i class="fas fa-external-link-alt"></i> on Google Maps](https://www.google.com/maps?rlz=1C1GCER_en&um=1&ie=UTF-8&fb=1&gl=kr&sa=X&geocode=KR2fN91q7Gg1MbEFhMSgzbwy&daddr=Busan,+Nam-gu,+Yongso-ro,+45)
