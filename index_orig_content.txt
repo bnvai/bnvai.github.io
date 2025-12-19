@@ -12,7 +12,7 @@ _italic text_
 
 **bold text**
 
-A centered paragraph with `{:.center}`.  
+A centered paragraph with `{:.center}`.
 Other elements can also be centered in the same way.
 {:.center}
 
@@ -49,7 +49,7 @@ Don't put a slash before the page you want to link to. This makes it relative to
 the current page rather than the root, ensuring your links will work regardless
 of your site's baseurl.
 
-For example, if you link to [Team](/team) and your site is hosted at 
+For example, if you link to [Team](/team) and your site is hosted at
 your-lab.github.io/lab-website, that link would lead to
 your-lab.github.io/team instead of your-lab.github.io/lab-website/team.
 
@@ -58,9 +58,9 @@ relative_url filter when linking to pages:
 https://jekyllrb.com/docs/liquid/filters/
 {% endcomment %}
 
-[Home page]()  
-[Team page](team)  
-[Blog page](blog)  
+[Home page]()
+[Team page](team)
+[Blog page](blog)
 
 ---
 
@@ -333,12 +333,7 @@ To see the built-in links and add your own, see `/_includes/social-link.html`.
 {% capture html %}
 {% include social-link.html type="website" link=page.website %}
 {% include social-link.html type="contact" %}
-{% include social-link.html type="email" %}
 {% include social-link.html type="google" %}
-{% include social-link.html type="github" %}
-{% include social-link.html type="twitter" %}
-{% include social-link.html type="instagram" %}
-{% include social-link.html type="youtube" %}
 {% endcapture %}
 
 {% include centerer.html html=html %}
