@@ -38,8 +38,7 @@ Department of Biomedical Engineering
 Pukyong National University (PKNU)
 
 Room 1202, Ungbi building (A12),
-45, Yongso-ro, Nam-gu, (Pukyong National University)
-Busan, South Korea, 48513
+45, Yongso-ro, Nam-gu, Busan, South Korea, 48513
 {% endcapture %}
 
 {% include centerer.html html=html %}

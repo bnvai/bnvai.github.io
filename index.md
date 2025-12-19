@@ -163,12 +163,7 @@ Let's work together to shape the future of healthcare.
 {% capture html %}
 {% include social-link.html type="website" link=page.website %}
 {% include social-link.html type="contact" %}
-{% include social-link.html type="email" %}
 {% include social-link.html type="google" %}
-{% include social-link.html type="github" %}
-{% include social-link.html type="twitter" %}
-{% include social-link.html type="instagram" %}
-{% include social-link.html type="youtube" %}
 {% endcapture %}
 
 {% include centerer.html html=html %}

@@ -2,9 +2,7 @@
 title: Activities
 ---
 
-<i class="fas fa-photo-film"></i>Activities
-
-The following software is primarily developed or maintained by the NanoBioMedicineInno Lab
+# <i class="fas fa-feather-alt"></i>Activities
 
 {%
   include gallery.html
@@ -34,10 +32,10 @@ The following software is primarily developed or maintained by the NanoBioMedici
 {% endfor %}
 </ul>
 
-{% capture html %}
+<!-- {% capture html %}
 {% include carousel.html id="myCarousel" images=images %}
 {% endcapture %}
 
-<p>Captured HTML length: {{ html | size }}</p>  <!-- Thêm dòng này để debug -->
+<p>Captured HTML length: {{ html | size }}</p>
 
-{% include centerer.html html=html %}
+{% include centerer.html html=html %} -->
