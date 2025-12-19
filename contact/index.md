@@ -15,7 +15,7 @@ We are located on the 2rd floor of the Ungbi building.
   <h2>Visitors by Country</h2>
 
   <iframe
-    src="https://lookerstudio.google.com/embed/reporting/fd13c6d7-c87d-43c8-886c-5fec8c5697ab/page/RqKjF"
+    src="https://lookerstudio.google.com/embed/reporting/a5644e5b-e5ff-437c-806d-4529170aa65c/page/kIV1C"
     loading="lazy"
     width="100%"
     height="520"
