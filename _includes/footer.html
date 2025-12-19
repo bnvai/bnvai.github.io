@@ -1,12 +1,24 @@
-<footer>
-  <div class="footer_row">
-    {%- include social-link.html type="contact" large=true -%}
-    {%- include social-link.html type="github" large=true -%}
-    {%- include social-link.html type="twitter" large=true -%}
-    {%- include social-link.html type="instagram" large=true -%}
-    {%- comment -%}
-    {%- include social-link.html type="rss" large=true -%}
-    {%- endcomment -%}
+<footer class="site-footer">
+  <div class="footer-inner">
+    <!-- Social links -->
+    <div class="footer-social">
+      {%- include social-link.html type="contact" -%} {%- include
+      social-link.html type="twitter" -%} {%- include social-link.html
+      type="instagram" -%}
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Copyright -->
+    <div class="footer-copy">
+      © <span id="year"></span> <strong>{{ site.title }}</strong>. All rights
+      reserved.
+      <span class="footer-meta"> © NBMInnoLab · PKNU </span>
+    </div>
   </div>
-  <!-- &copy; <script>document.write(new Date().getFullYear())</script> {{ site.title }} -->
 </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>

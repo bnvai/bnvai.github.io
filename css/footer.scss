@@ -1,31 +1,50 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
-footer {
-  box-sizing: border-box;
-  position: relative;
-  padding: 40px;
-  color: $white;
+.site-footer {
+  margin-top: 4rem;
+  padding: 2.5rem 1.5rem;
   background: $dark-gray;
+  color: rgba($white, 0.85);
   font-family: $sans;
-  box-shadow: $shadow;
   text-align: center;
-  z-index: 1;
 
-  .footer_row {
-    @include inline-flex-center;
-    flex-grow: 1;
+  border-top: 1px solid rgba($white, 0.12);
+
+  // ======================
+  // Inner container
+  // ======================
+  .footer-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  // ======================
+  // Social icons
+  // ======================
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
 
     .social_link {
-      margin: 0 5px;
-      transition: opacity $fast;
+      font-size: 1.15rem;
+      color: rgba($white, 0.75);
+      transition: opacity $fast, transform $fast, color $fast;
+
+      &:hover {
+        color: $white;
+        opacity: 1;
+        transform: translateY(-2px);
+      }
     }
 
     &:hover .social_link {
-      opacity: 0.25;
+      opacity: 0.35;
     }
 
     & .social_link:hover {
@@ -33,9 +52,62 @@ footer {
     }
   }
 
+  // ======================
+  // Divider
+  // ======================
+  .footer-divider {
+    width: 48px;
+    height: 1px;
+    background: rgba($white, 0.25);
+    margin: 0 auto 1rem;
+  }
+
+  // ======================
+  // Copyright
+  // ======================
+  .footer-copy {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: rgba($white, 0.7);
+
+    strong {
+      color: rgba($white, 0.9);
+      font-weight: 600;
+    }
+  }
+
+  // ======================
+  // Meta line
+  // ======================
+  .footer-meta {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.7rem;
+    color: rgba($white, 0.55);
+    letter-spacing: 0.02em;
+  }
+
+  // ======================
+  // Links
+  // ======================
   a {
-    color: $white !important;
-    font-family: $sans;
+    color: rgba($white, 0.8);
     text-decoration: none;
+    transition: color $fast;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  // ======================
+  // Responsive
+  // ======================
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    .footer-social {
+      gap: 1rem;
+    }
   }
 }
