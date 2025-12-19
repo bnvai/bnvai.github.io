@@ -16,6 +16,8 @@ Explore our latest publications to learn more about our discoveries and how they
 
 {% include card-search.html subject="papers" %}
 
+<!-- section break -->
+
 {% include pub-sort.html %}
 
 {% include publications.html %}

@@ -1,31 +1,13 @@
-{% assign publications = site.data.publications %}
-
-{% if include.year != nil %}
-  {% if include.year == "" %}
-    {% assign filtered_publications = publications %}
-  {% else %}
-    {% assign filtered_publications = publications | where: "year", include.year %}
-  {% endif %}
-{% else %}
-  {% assign filtered_publications = publications %}
-{% endif %}
+{% assign publications = site.data.publications %} {% if include.year != nil %}
+{% if include.year == "" %} {% assign filtered_publications = publications %} {%
+else %} {% assign filtered_publications = publications | where: "year",
+include.year %} {% endif %} {% else %} {% assign filtered_publications =
+publications %} {% endif %}
 
 <div id="pub-list">
-{% for pub in filtered_publications %}
-  {% capture tags %}
-    {% include tags.html tag=pub.year %}
-  {% endcapture %}
-
-  {% capture row2_text %}
-  Cited by: {{ pub.cited_by }} | Year: {{ pub.year }}
-  {% endcapture %}
-
-  {%- include pub-component.html
-    size=include.size
-    heading=pub.title
-    row1=pub.authors
-    row2=row2_text
-    index=forloop.index
-  -%}
-{% endfor %}
+  {% for pub in filtered_publications %} {% capture tags %} {% include tags.html
+  tag=pub.year %} {% endcapture %} {% capture row2_text %} Cited by: {{
+  pub.cited_by }} | Year: {{ pub.year }} {% endcapture %} {%- include
+  pub-component.html size=include.size heading=pub.title row1=pub.authors
+  row2=row2_text index=forloop.index -%} {% endfor %}
 </div>
