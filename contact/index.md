@@ -15,11 +15,12 @@ We are located on the 2rd floor of the Ungbi building.
   <h2>Visitors by Country</h2>
 
   <iframe
-    src="https://lookerstudio.google.com/embed/reporting/a5644e5b-e5ff-437c-806d-4529170aa65c/page/kIV1C"
-    loading="lazy"
-    frameborder="0"
-    allowfullscreen
-    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+  width="600"
+  height="1500"
+  src="https://lookerstudio.google.com/embed/reporting/a5644e5b-e5ff-437c-806d-4529170aa65c/page/kIV1C"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
   </iframe>
 </section>
 
