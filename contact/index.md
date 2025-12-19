@@ -11,6 +11,21 @@ We are located on the 2rd floor of the Ungbi building.
 
 <!-- section break -->
 
+<section class="analytics-section">
+  <h2>Visitors by Country</h2>
+
+  <iframe
+    src="https://lookerstudio.google.com/embed/reporting/fd13c6d7-c87d-43c8-886c-5fec8c5697ab/page/RqKjF"
+    loading="lazy"
+    width="100%"
+    height="520"
+    frameborder="0"
+    style="border:0"
+    allowfullscreen
+    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+  </iframe>
+</section>
+
 ## <i class="fas fa-envelope"></i>Email
 
 <style type="text/css">
