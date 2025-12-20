@@ -8,10 +8,9 @@ Join us as we explore the smallest scales to make the biggest impact on human he
 
 <!-- section break -->
 
-## Upcomming Feature
+## Upcoming Feature
 
 {% include carousel-container.html %}
-{% include centerer.html html=html %}
 
 <!-- section break -->
 
@@ -29,9 +28,6 @@ Laoreet id donec ultrices tincidunt arcu non sodales neque.
 <!-- section break -->
 
 ## Feature
-
-A _feature_ component, with an image, a heading, markdown text, and an optional image link.
-Useful for your home page, where you want to highlight key points about your lab.
 
 {% capture text %}
 In the pursuit of excellence, one must embrace both effort and resilience, for through dedication comes great achievement.
@@ -61,8 +57,6 @@ Strength and grace are woven together, guiding us toward growth and success.
 
 ## Figure
 
-A _figure_ component with optional caption and image link.
-
 {%
   include figure.html
   image="images/bacteria.jpg"
@@ -75,30 +69,16 @@ A _figure_ component with optional caption and image link.
 
 ## Gallery
 
-A _gallery_ component with optional tooltips and image links.
-
 {%
-include gallery.html
-image1="images/paper1.jpg"
-
-  <!-- tooltip1="Cell" -->
-  <!-- link1="https://cell.com/" -->
-
-image2="images/paper2.jpg"
-
-  <!-- tooltip2="Virus" -->
-
-image3="images/paper3.jpg"
-
-  <!-- tooltip3="Cell"
-  link3="https://cell.com/" -->
-
-image4="images/paper4.jpg"
-image5="images/paper5.jpg"
+  include gallery.html
+  image1="images/paper1.jpg"
+  image2="images/paper2.jpg"
+  image3="images/paper3.jpg"
+  image4="images/paper4.jpg"
+  image5="images/paper5.jpg"
 %}
 
 A _gallery_ component, without fitting the images to squares, and without the image effects.
-Useful for transparent images, and images that should not be cropped, like logos.
 
 {%
   include gallery.html
@@ -136,7 +116,6 @@ Useful for transparent images, and images that should not be cropped, like logos
   link="https://nasa.gov/"
   heading="Medium card"
   row1="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-  row2=tags
 %}
 {%
   include card.html
@@ -161,3 +140,4 @@ Let's work together to shape the future of healthcare.
 {% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="join" -%}
 {%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="collaborators" -%}
 {:.center}
+
