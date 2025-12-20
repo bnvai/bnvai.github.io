@@ -1,5 +1,3 @@
-## Figure
-
 {% include figure.html
    image="images/paper1.jpg"
    caption="Welcome to WebLab"

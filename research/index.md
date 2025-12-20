@@ -15,7 +15,3 @@ title: Research
 ## Research List
 
 {% include research-list.html %}
-
-## Carousel
-
-{% include carousel-container.html %}

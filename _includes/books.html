@@ -1,0 +1,23 @@
+{% assign books = site.data.books | sort: "year" | reverse %}
+
+<div class="books">
+  {% for b in books %}
+  <div class="book-item">
+    <p class="book-title">
+      <strong>{{ b.title }}</strong>
+    </p>
+
+    <p class="book-authors">
+      {{ b.authors }}
+    </p>
+
+    <p class="book-meta">
+      {% if b.book %}<em>{{ b.book }}</em>, {% endif %}
+      {% if b.publisher %}{{ b.publisher }}, {% endif %}
+      {{ b.year }}
+      {% if b.pages %}, {{ b.pages }}{% endif %}
+      {% if b.note %} ({{ b.note }}){% endif %}
+    </p>
+  </div>
+  {% endfor %}
+</div>
