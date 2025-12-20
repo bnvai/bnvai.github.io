@@ -14,16 +14,14 @@ Join us as we explore the smallest scales to make the biggest impact on human he
 
 <!-- section break -->
 
-# Heading 1
+## Figure
 
-## Heading 2
-
-Ut aliquam purus sit amet luctus venenatis lectus magna fringilla.
-Mi bibendum neque egestas congue quisque egestas diam in.
-Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque.
-Sapien nec sagittis aliquam malesuada.
-Non odio euismod lacinia at quis risus sed vulputate.
-Laoreet id donec ultrices tincidunt arcu non sodales neque.
+{% include figure.html
+   image="images/bacteria.jpg"
+   caption="Welcome to WebLab"
+   width="100%"
+   link="team"
+%}
 
 <!-- section break -->
 
@@ -51,18 +49,6 @@ Strength and grace are woven together, guiding us toward growth and success.
   link="resources"
   heading="Extra, extra, read all about it!"
   text=text
-%}
-
-<!-- section break -->
-
-## Figure
-
-{%
-  include figure.html
-  image="images/bacteria.jpg"
-  caption="A set-height figure"
-  height="300px"
-  link="team"
 %}
 
 <!-- section break -->
@@ -140,4 +126,3 @@ Let's work together to shape the future of healthcare.
 {% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="join" -%}
 {%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="collaborators" -%}
 {:.center}
-
