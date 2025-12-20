@@ -1,27 +1,17 @@
-Welcome to the Nano Bio Medical Innovation Lab
-
-At the forefront of interdisciplinary research, the Nano Bio Medical Innovation Lab is dedicated to pioneering breakthroughs at the intersection of nanotechnology, biology, and medicine. Our mission is to develop innovative solutions that address critical challenges in healthcare, from early disease detection to targeted drug delivery and regenerative medicine.
-
-Combining cutting-edge nanomaterials, advanced bioengineering techniques, and biomedical insights, we strive to bridge the gap between fundamental research and real-world clinical applications. Our team brings together passionate scientists, engineers, and clinicians working collaboratively to transform the future of diagnostics and therapeutics.
-
-Join us as we explore the smallest scales to make the biggest impact on human health.
-
-<!-- section break -->
-
-## Upcoming Feature
-
-{% include carousel-container.html %}
-
-<!-- section break -->
-
 ## Figure
 
 {% include figure.html
    image="images/paper1.jpg"
    caption="Welcome to WebLab"
    width="100%"
-   link="team"
+   hero="true"
 %}
+
+<!-- section break -->
+
+## Upcoming Feature
+
+{% include carousel-container.html %}
 
 <!-- section break -->
 

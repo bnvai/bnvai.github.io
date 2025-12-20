@@ -39,3 +39,33 @@
     }
   }
 }
+
+.figure[data-hero="true"] {
+  margin: 0;
+  width: 100vw;
+  max-width: 100vw;
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  .figure_image {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100vw;
+      max-width: 100vw;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .figure_caption {
+    max-width: $page;
+    margin: 12px auto 0;
+    padding: 0 1rem;
+  }
+}
