@@ -1,4 +1,8 @@
-<figure class="figure" data-flat="{{ include.flat | default: false }}">
+<figure
+  class="figure"
+  data-flat="{{ include.flat | default: false }}"
+  data-hero="{{ include.hero | default: false }}"
+>
   <a 
     {% if include.link %}href="{{ include.link | relative_url }}"{% endif %}
     class="figure_image"
@@ -18,6 +22,7 @@
       "
     />
   </a>
+
   {%- if include.caption -%}
   <figcaption class="figure_caption">
     {{- include.caption | markdownify | remove: "<p>" | remove: "</p>" -}}
