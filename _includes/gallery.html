@@ -1,11 +1,39 @@
+{%- assign has_list = include.images -%}
+
+{%- if has_list -%}
+<!-- ========================= -->
+<!-- NEW MODE: images list -->
+<!-- ========================= -->
+
+<div
+  class="gallery"
+  data-fit="{{ include.fit | default: true }}"
+  data-flat="{{ include.flat | default: false }}"
+  data-number="{{ include.images | size }}"
+>
+  {%- for img in include.images -%}
+  <a
+    {% if img.link %}href="{{ img.link | relative_url }}"{% endif %}
+    class="gallery_item"
+    {% if img.caption %}data-tooltip="{{ img.caption }}"{% endif %}
+  >
+    <img src="{{ img.src | relative_url }}">
+  </a>
+  {%- endfor -%}
+</div>
+
+{%- else -%}
+<!-- ========================= -->
+<!-- LEGACY MODE: image1..100 -->
+<!-- ========================= -->
+
 {%- assign max = 0 -%}
 
 {%- for i in (1..100) -%}
-{% assign image = "image" | append: i %}
-{% assign image = include[image] %}
-{% if image %}
-{% assign max = i %}
-{% endif %}
+  {%- assign key = "image" | append: i -%}
+  {%- if include[key] -%}
+    {%- assign max = i -%}
+  {%- endif -%}
 {%- endfor -%}
 
 <div
@@ -15,23 +43,25 @@
   data-number="{{ max }}"
 >
   {%- for i in (1..100) -%}
+    {%- assign image = "image" | append: i -%}
+    {%- assign image = include[image] -%}
 
-  {%- assign image = "image" | append: i -%}
-  {%- assign image = include[image] -%}
-  {%- assign tooltip = "tooltip" | append: i -%}
-  {%- assign tooltip = include[tooltip] -%}
-  {%- assign link = "link" | append: i -%}
-  {%- assign link = include[link] -%}
+    {%- assign tooltip = "tooltip" | append: i -%}
+    {%- assign tooltip = include[tooltip] -%}
 
-  {%- if image -%}
-  <a
-    {% if link %}href="{{ link | relative_url }}"{% endif %}
-    class="gallery_item"
-    data-tooltip="{{ tooltip }}"
-  >
-    <img src="{{ image | relative_url }}">
-  </a>
-  {%- endif -%}
+    {%- assign link = "link" | append: i -%}
+    {%- assign link = include[link] -%}
 
+    {%- if image -%}
+    <a
+      {% if link %}href="{{ link | relative_url }}"{% endif %}
+      class="gallery_item"
+      {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}
+    >
+      <img src="{{ image | relative_url }}">
+    </a>
+    {%- endif -%}
   {%- endfor -%}
 </div>
+
+{%- endif -%}
