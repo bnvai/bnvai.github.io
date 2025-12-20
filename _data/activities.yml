@@ -1,0 +1,38 @@
+- event: Spring
+  year: 2024
+  order: 1
+  images:
+    - src: images/spring.png
+      caption: Spring
+    - src: images/spring1.png
+      caption: Spring
+
+- event: Graduation
+  year: 2024
+  order: 2
+  images:
+    - src: images/grad1.png
+      caption: Graduation
+
+- event: Hike
+  year: 2024
+  order: 3
+  images:
+    - src: images/hike.png
+      caption: Hiking
+
+- event: Wedding
+  year: 2024
+  order: 4
+  images:
+    - src: images/wed.png
+      caption: Wedding
+    - src: images/wed1.png
+      caption: Ceremony
+
+- event: Travel
+  year: 2025
+  order: 5
+  images:
+    - src: images/IMG_5179.png
+      caption: Travel

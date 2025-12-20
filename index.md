@@ -17,7 +17,7 @@ Join us as we explore the smallest scales to make the biggest impact on human he
 ## Figure
 
 {% include figure.html
-   image="images/bacteria.jpg"
+   image="images/paper1.jpg"
    caption="Welcome to WebLab"
    width="100%"
    link="team"
