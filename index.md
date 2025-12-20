@@ -2,6 +2,7 @@
    image="images/paper1.jpg"
    caption="Welcome to WebLab"
    width="100%"
+   height="100%"
    hero="true"
 %}
 
