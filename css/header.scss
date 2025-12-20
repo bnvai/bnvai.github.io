@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 header {
   box-sizing: border-box;
@@ -35,7 +35,7 @@ header {
   .nav_row {
     @include inline-flex-center;
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 1.25rem;
     font-weight: $medium;
     text-transform: uppercase;
     letter-spacing: 1px;

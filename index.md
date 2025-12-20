@@ -78,17 +78,23 @@ A _figure_ component with optional caption and image link.
 A _gallery_ component with optional tooltips and image links.
 
 {%
-  include gallery.html
-  image1="images/cell.jpg"
-  tooltip1="Cell"
-  link1="https://cell.com/"
-  image2="images/virus.jpg"
-  tooltip2="Virus"
-  image3="images/cell.jpg"
-  tooltip3="Cell"
-  link3="https://cell.com/"
-  image4="images/virus.jpg"
-  image5="images/bacteria.jpg"
+include gallery.html
+image1="images/paper1.jpg"
+
+  <!-- tooltip1="Cell" -->
+  <!-- link1="https://cell.com/" -->
+
+image2="images/paper2.jpg"
+
+  <!-- tooltip2="Virus" -->
+
+image3="images/paper3.jpg"
+
+  <!-- tooltip3="Cell"
+  link3="https://cell.com/" -->
+
+image4="images/paper4.jpg"
+image5="images/paper5.jpg"
 %}
 
 A _gallery_ component, without fitting the images to squares, and without the image effects.
@@ -155,15 +161,3 @@ Let's work together to shape the future of healthcare.
 {% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="join" -%}
 {%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="collaborators" -%}
 {:.center}
-
-<!-- section break -->
-
-## Social Link
-
-{% capture html %}
-{% include social-link.html type="website" link=page.website %}
-{% include social-link.html type="contact" %}
-{% include social-link.html type="google" %}
-{% endcapture %}
-
-{% include centerer.html html=html %}
