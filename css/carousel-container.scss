@@ -1,3 +1,6 @@
+---
+---
+
 @import 'variables';
 @import 'mixins';
 
@@ -8,8 +11,6 @@
   margin: 3rem auto;
   padding: 0 2.5rem;
   overflow: hidden;
-
-  display: flow-root; // ✅ chặn margin-collapse, giữ spacing section
 
   @include flex-center;
   @include trim-margins;
@@ -54,10 +55,9 @@
   .carousel-track {
     display: flex;
     gap: 1.25rem;
+    padding: 1.5rem 0;
 
-    padding: 1.75rem 0.75rem; // ✅ spacing hai đầu đẹp hơn
     overflow-x: auto;
-
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 
@@ -81,13 +81,11 @@
     border-radius: 14px;
     overflow: hidden;
 
-    padding: 0.75rem; // ✅ lề riêng từng component (KHÔNG margin)
-
     box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
-      transform: translateY(-4px); // ✅ nhẹ, không đè card khác
+      transform: translateY(-6px);
       box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
     }
 
@@ -112,26 +110,23 @@
       height: 210px;
       object-fit: cover;
       background: #f4f4f4;
-
-      border-radius: 10px; // ✅ layer rõ hơn card
     }
 
     // =========================
     // Content
     // =========================
     .content {
-      padding: 0.85rem 0.9rem;
+      padding: 1rem 1.1rem;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      gap: 0.35rem;
     }
 
     .title {
       font-size: 1rem;
       font-weight: 600;
       line-height: 1.35;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
 
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -162,12 +157,12 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
 
       span {
-        background: #f5f6f8;
+        background: #f1f3f5;
         color: #555;
-        padding: 2px 7px;
+        padding: 3px 8px;
         border-radius: 999px;
       }
     }
