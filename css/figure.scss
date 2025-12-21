@@ -1,3 +1,10 @@
+---
+---
+
+@import "variables";
+@import "mixins";
+
+
 .figure {
   @include flex-center;
   flex-direction: column;
