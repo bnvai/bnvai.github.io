@@ -1,106 +1,285 @@
-<link rel="stylesheet" href="{{ '/css/research-areas.css' | relative_url }}">
-
-<div class="research-container">
-    <div class="hero-section">
-        <div class="hero-icon">💧</div>
-        <h1 class="hero-title">Hydrogel-based Flexible Materials<br>for Wound Healing and Monitoring</h1>
-        <p class="hero-subtitle">
-            Integrating advanced materials science, biosensing technology, and wearable systems 
-            to revolutionize wound care through innovative hydrogel-based solutions
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Vision</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial Black', 'Impact', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1419 100%);
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.4;
+        }
+        
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 15vw, 12rem);
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            line-height: 0.9;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 80px rgba(99,102,241,0.5);
+            position: relative;
+            z-index: 1;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(99,102,241,0.6)); }
+            50% { filter: drop-shadow(0 0 40px rgba(139,92,246,0.8)); }
+        }
+        
+        .section {
+            min-height: 100vh;
+            padding: 8rem 5%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .section:nth-child(even) {
+            background: rgba(255,255,255,0.02);
+        }
+        
+        .content {
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .section-number {
+            font-size: clamp(8rem, 20vw, 18rem);
+            font-weight: 900;
+            position: absolute;
+            top: 2rem;
+            right: 5%;
+            opacity: 0.05;
+            line-height: 1;
+            pointer-events: none;
+        }
+        
+        h2 {
+            font-size: clamp(3rem, 8vw, 7rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            letter-spacing: -0.03em;
+            line-height: 1;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #fff 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section p {
+            font-family: 'Arial', sans-serif;
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            line-height: 1.8;
+            color: rgba(255,255,255,0.8);
+            font-weight: 400;
+            max-width: 900px;
+        }
+        
+        .keyword {
+            font-family: 'Arial Black', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+            color: #8b5cf6;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin: 0.3em 0;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .card {
+            background: rgba(255,255,255,0.03);
+            border: 2px solid rgba(139,92,246,0.2);
+            padding: 3rem 2rem;
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(139,92,246,0.6);
+            background: rgba(139,92,246,0.05);
+            box-shadow: 0 20px 60px rgba(139,92,246,0.3);
+        }
+        
+        .card h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 10px 30px rgba(139,92,246,0.4);
+        }
+        
+        .section-icon {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(99,102,241,0.2));
+            border: 3px solid rgba(139,92,246,0.5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 5%;
+            }
+            .section-number {
+                font-size: 10rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>RESEARCH</h1>
     </div>
-
-    <div class="research-areas">
-        <div class="research-item" data-research="flexible">
-            <div class="research-image bg-purple">
-                <div class="gradient-overlay"></div>
-                <div class="research-number">01</div>
-            </div>
-            <div class="research-content">
-                <h3 class="research-title color-purple">Flexible Materials</h3>
-                <p class="research-description">
-                    Development of methacrylated gelatin and advanced hydrogels with tunable properties for drug delivery and wound healing applications.
-                </p>
-                <div class="research-tags">
-                    <span class="tag">Hydrogel</span>
-                    <span class="tag">Drug Delivery</span>
-                    <span class="tag">Biomaterials</span>
-                </div>
-                <a href="#" class="explore-button">
-                    Learn More →
-                </a>
-            </div>
+    
+    <div class="section">
+        <div class="section-number">01</div>
+        <div class="content">
+            <div class="section-icon">💧</div>
+            <h2>FLEXIBLE<br>HYDROGELS</h2>
+            <p>
+                <span class="keyword">Soft. Biocompatible. Adaptive.</span><br><br>
+                We engineer flexible hydrogel materials that seamlessly interface with human skin and biological tissues. Through advanced polymer chemistry—methacrylated gelatin and calcium alginate hydrogels—we develop systems capable of controlled drug delivery, moisture regulation, and mechanical adaptability.
+                <br><br>
+                These hydrogels mimic natural tissue mechanics, enabling enhanced wound healing and long-term stability in wearable and implantable applications. The foundation for next-generation wound dressings that combine comfort, functionality, and clinical effectiveness.
+            </p>
         </div>
-
-        <div class="research-item" data-research="diagnostic">
-            <div class="research-image bg-green">
-                <div class="gradient-overlay"></div>
-                <div class="research-number">02</div>
-            </div>
-            <div class="research-content">
-                <h3 class="research-title color-green">Point-of-Care Diagnostic</h3>
-                <p class="research-description">
-                    pH-sensitive fluorescent sensors for real-time wound monitoring using microparticles and calcium alginate hydrogel systems.
-                </p>
-                <div class="research-tags">
-                    <span class="tag">Biosensing</span>
-                    <span class="tag">Fluorescence</span>
-                    <span class="tag">Diagnostics</span>
-                </div>
-                <a href="#" class="explore-button">
-                    Learn More →
-                </a>
-            </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-number">02</div>
+        <div class="content">
+            <div class="section-icon">🔬</div>
+            <h2>POINT-OF-CARE<br>DIAGNOSTICS</h2>
+            <p>
+                <span class="keyword">Rapid. Non-invasive. Immediate.</span><br><br>
+                We develop point-of-care diagnostic systems that enable rapid assessment of wound conditions directly at the site of care. Our approach integrates pH-sensitive fluorophores and hydrogel-based matrices to visually and quantitatively monitor biochemical changes.
+                <br><br>
+                Translating physiological signals into optical or electronic readouts. Providing clinicians and patients with immediate, actionable information. Improving early detection, reducing delays, supporting personalized wound management.
+            </p>
         </div>
-
-        <div class="research-item" data-research="wearable">
-            <div class="research-image bg-yellow">
-                <div class="gradient-overlay"></div>
-                <div class="research-number">03</div>
-            </div>
-            <div class="research-content">
-                <h3 class="research-title color-yellow">Wearable Devices</h3>
-                <p class="research-description">
-                    Integration of FTE sensors, silver fabric, and levitating microneedles into daily clothing for continuous health monitoring.
-                </p>
-                <div class="research-tags">
-                    <span class="tag">Wearables</span>
-                    <span class="tag">E-textiles</span>
-                    <span class="tag">Sensors</span>
-                </div>
-                <a href="#" class="explore-button">
-                    Learn More →
-                </a>
-            </div>
+    </div>
+    
+    <div class="section">
+        <div class="section-number">03</div>
+        <div class="content">
+            <div class="section-icon">⚡</div>
+            <h2>WEARABLE<br>BIOELECTRONICS</h2>
+            <p>
+                <span class="keyword">Flexible. Connected. Continuous.</span><br><br>
+                We integrate flexible electronics with textiles and skin-mounted systems for continuous physiological monitoring. Conductive fabrics, thin-film electrodes, soft interconnects—devices that maintain electrical performance while preserving comfort and mobility.
+                <br><br>
+                Optimized for long-term daily use. Real-time monitoring of wound status, biomechanical activity, environmental interactions. Bridging materials science and electronic engineering to advance next-generation healthcare wearables.
+            </p>
         </div>
-
-        <div class="research-item" data-research="smart">
-            <div class="research-image bg-pink">
-                <div class="gradient-overlay"></div>
-                <div class="research-number">04</div>
-            </div>
-            <div class="research-content">
-                <h3 class="research-title color-pink">Smart Patches</h3>
-                <p class="research-description">
-                    WINDOW system with NFC connectivity and interdigitated electrodes for wireless wound monitoring and smartphone integration.
-                </p>
-                <div class="research-tags">
-                    <span class="tag">IoT</span>
-                    <span class="tag">Wireless</span>
-                    <span class="tag">Smart Systems</span>
+    </div>
+    
+    <div class="section">
+        <div class="section-number">04</div>
+        <div class="content">
+            <div class="section-icon">📡</div>
+            <h2>SMART<br>WOUND PATCHES</h2>
+            <p>
+                <span class="keyword">Integrated. Wireless. Intelligent.</span><br><br>
+                We investigate smart wound patches that combine biosensing, wireless communication, and flexible materials into a single platform. Interdigitated electrodes, biosensing modules, NFC-based wireless interfaces—real-time data acquisition and contactless readout using mobile devices.
+                <br><br>
+                The transition from passive wound dressings to intelligent, connected healthcare solutions. Continuous monitoring. Timely interventions. Data-driven clinical decisions.
+            </p>
+        </div>
+    </div>
+    
+    <div class="section" style="min-height: 50vh;">
+        <div class="content">
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">🧬</div>
+                    <h3>MATERIALS</h3>
+                    <p style="font-size: 1rem;">Polymer Chemistry • Hydrogel Engineering • Biocompatibility</p>
                 </div>
-                <a href="#" class="explore-button">
-                    Learn More →
-                </a>
+                <div class="card">
+                    <div class="icon">🎯</div>
+                    <h3>SENSING</h3>
+                    <p style="font-size: 1rem;">Biosensors • Optical Detection • pH Monitoring</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔌</div>
+                    <h3>ELECTRONICS</h3>
+                    <p style="font-size: 1rem;">Flexible Circuits • Wearables • Wireless Systems</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💊</div>
+                    <h3>HEALTHCARE</h3>
+                    <p style="font-size: 1rem;">Wound Care • Clinical Translation • Patient Outcomes</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Modal -->
-<div class="detail-modal" id="researchModal">
-    <div class="modal-content">
-        <button class="close-button" id="closeModal">×</button>
-        <div id="modalBody"></div>
-    </div>
-</div>
+</body>
+</html>
