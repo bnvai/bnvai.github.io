@@ -1,7 +1,4 @@
 {% capture hero_content %}
-<h1>Welcome to WebLab</h1>
-<p>Nano · Bio · Medical Innovation</p>
-
 <a
   href="{{ 'research' | relative_url }}"
   class="nav_link hero-btn"
