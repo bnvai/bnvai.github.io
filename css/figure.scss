@@ -119,6 +119,43 @@
       margin: 0 auto;
     }
   }
+
+  .hero-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.9rem 2.4rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    color: #fff;
+    text-decoration: none;
+
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    background: transparent;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    transition: 
+      transform 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .hero-btn:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .hero-btn:active {
+    transform: translateY(-1px) scale(0.98);
+  }
 }
 
 /* =================================================
