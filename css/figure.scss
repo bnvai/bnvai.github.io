@@ -1,9 +1,9 @@
+---
+---
+
 @import "variables";
 @import "mixins";
 
-/* =========================================
-   BASE FIGURE
-   ========================================= */
 
 .figure {
   @include flex-center;
@@ -12,7 +12,10 @@
   @include trim-margins;
 
   .figure_image {
-    width: 100%;
+    img[data-default="true"] {
+      max-width: 400px;
+      max-height: 300px;
+    }
   }
 
   .figure_caption {
@@ -21,58 +24,83 @@
     font-style: italic;
     text-align: center;
   }
+
+  &[data-flat="false"] {
+    .figure_image {
+      overflow: hidden;
+      box-shadow: $shadow;
+
+      img {
+        transition: transform $fast;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+  }
 }
 
-/* =========================================
-   HERO FIGURE – FULL WIDTH, NO CROP
-   ========================================= */
+/* =================================================
+   HERO FIGURE – FULL SCREEN (DESKTOP FIRST)
+   ================================================= */
 
 .figure[data-hero="true"] {
   position: relative;
 
-  /* FULL WIDTH – thoát container */
+  /* thoát container */
   width: 100vw;
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
 
-  padding: 0 !important;
-  margin: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 
-  /* ❌ KHÔNG ÉP CHIỀU CAO */
-  height: auto;
-  min-height: unset;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* DESKTOP */
+  height: 100vh;
+  min-height: 100vh;
+
+  /* không cho hover zoom */
+  &[data-flat="false"] .figure_image:hover img {
+    transform: none;
+  }
 
   .figure_image {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      /* override inline & default */
+      max-width: none !important;
+      max-height: none !important;
+
+      object-fit: cover;
+      display: block;
+    }
   }
 
-  .figure_image img {
-    width: 100%;
-    height: auto;                 // 🔥 KEY
-    max-width: none !important;
-    max-height: none !important;
-
-    object-fit: contain;          // 🔥 NO CROP – NO DISTORT
-    display: block;
-    background: #000;             // letterbox nếu cần
-  }
-
-  /* overlay tối (không ảnh hưởng ảnh) */
+  /* overlay tối */
   &::after {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.35);
-    pointer-events: none;
   }
 
-  /* overlay chữ / button */
+  /* overlay chữ */
   .hero-content {
     position: absolute;
     z-index: 2;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -80,40 +108,127 @@
     padding: 0 1rem;
 
     h1 {
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
       margin-bottom: 0.5rem;
     }
 
     p {
-      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      opacity: 0.9;
       max-width: 900px;
       margin: 0 auto;
-      opacity: 0.9;
     }
   }
 
   .hero-btn {
-    margin-top: 1.5rem;
-    padding: 1.1rem 3.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 1.1rem;
+    /* SIZE */
+    padding: 1.2rem 3.4rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.8px;
 
-    color: #0f172a;
-    background: #f8fafc;
-    border: 3px solid #38bdf8;
-    border-radius: 14px;
+    /* COLOR */
+    color: #0f172a;                // chữ đậm
+    background: #f8fafc;           // nền sáng (blue-gray)
+    border: 3px solid #38bdf8;     // viền xanh nổi (Tailwind sky-400)
+
+    border-radius: 14px;           // không quá tròn → học thuật
 
     text-decoration: none;
     cursor: pointer;
 
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.35);
+
+    transition:
+      transform 0.25s ease,
+      background 0.25s ease,
+      box-shadow 0.25s ease,
+      color 0.25s ease;
   }
 
+  /* Hover */
   .hero-btn:hover {
+    background: #e0f2fe;           // sáng hơn
+    color: #020617;
     transform: translateY(-4px);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    box-shadow:
+      0 20px 45px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Active */
+  .hero-btn:active {
+    transform: translateY(-2px);
+  }
+
+}
+
+/* =================================================
+   TABLET (≤ 1024px)
+   ================================================= */
+@media (max-width: 1024px) {
+  .figure[data-hero="true"] {
+
+    height: auto;
+    min-height: unset;
+
+    .figure_image {
+      height: auto;
+    }
+
+    .figure_image img {
+      height: auto;
+      width: 100%;
+      object-fit: contain;   // 🔥 KHÔNG CROP – KHÔNG MÉO
+      background: #000;      // viền đen nếu có khoảng trống
+    }
+  }
+}
+
+/* =================================================
+   MOBILE (≤ 768px)
+   ================================================= */
+@media (max-width: 768px) {
+  .figure[data-hero="true"] {
+
+    height: auto;
+    min-height: unset;
+
+    .figure_image {
+      height: auto;
+    }
+
+    .figure_image img {
+      height: auto;
+      width: 100%;
+      object-fit: contain;   // 🔥 KHÔNG CROP – KHÔNG MÉO
+      background: #000;      // viền đen nếu có khoảng trống
+    }
+  }
+}
+
+/* =================================================
+   SMALL MOBILE (≤ 480px)
+   ================================================= */
+@media (max-width: 480px) {
+  .figure[data-hero="true"] {
+
+    height: auto;
+    min-height: unset;
+
+    .figure_image {
+      height: auto;
+    }
+
+    .figure_image img {
+      height: auto;
+      width: 100%;
+      object-fit: contain;   // 🔥 KHÔNG CROP – KHÔNG MÉO
+      background: #000;      // viền đen nếu có khoảng trống
+    }
   }
 }
