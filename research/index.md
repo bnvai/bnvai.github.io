@@ -6,12 +6,27 @@ title: Research
 
 <!-- section break -->
 
-## Card Search
+<!-- ## Card Search -->
 
-{% include card-search.html subject="papers" %}
+<!-- {% include card-search.html subject="papers" %} -->
 
 <!-- section break -->
 
-## Research List
+<!-- ## Research List -->
 
-{% include research-list.html %}
+<!-- {% include research-list.html %} -->
+
+{% capture hero_content %}
+<a
+class="nav_link hero-btn"
+data-tooltip="Details"
+
+> Explore Research
+> </a>
+> {% endcapture %}
+
+{% include figure.html
+  image="images/researchlist.jpg"
+  hero=true
+  content=hero_content
+%}
