@@ -23,9 +23,14 @@
     />
   </a>
 
+  {% if include.hero and include.content %}
+    <div class="hero-content">
+      {{ include.content }}
+    </div>
+  {% endif %}
+
   {%- if include.caption -%}
   <figcaption class="figure_caption">
     {{- include.caption | markdownify | remove: "<p>" | remove: "</p>" -}}
-  </figcaption>
   {%- endif -%}
 </figure>

@@ -1,22 +1,22 @@
+{% capture hero_content %}
+<h1>Welcome to WebLab</h1>
+<p>Nano · Bio · Medical Innovation</p>
+
+<a
+  href="{{ 'research' | relative_url }}"
+  class="nav_link hero-btn"
+  data-tooltip="Published works"
+>
+  Explore Research
+</a>
+{% endcapture %}
+
 {% include figure.html
   image="images/paper1.jpg"
-  hero="true"
+  hero=true
+  content=hero_content
 %}
 
-<div class="hero-content">
-  <h1>Welcome to WebLab</h1>
-  <p>Nano · Bio · Medical Innovation</p>
-
-  <a
-    href="{{ 'research' | relative_url }}"
-    class="nav_link hero-link"
-    data-tooltip="Published works"
-    data-placement="top"
-    data-delay="400"
-  >
-    Explore Research
-  </a>
-</div>
 
 <!-- section break -->
 
