@@ -183,8 +183,8 @@
     .figure_image img {
       height: auto;
       width: 100%;
-      object-fit: contain;   // 🔥 KHÔNG CROP – KHÔNG MÉO
-      background: #000;      // viền đen nếu có khoảng trống
+      object-fit: contain; 
+      background: #000;
     }
   }
 }
@@ -205,8 +205,8 @@
     .figure_image img {
       height: auto;
       width: 100%;
-      object-fit: contain;   // 🔥 KHÔNG CROP – KHÔNG MÉO
-      background: #000;      // viền đen nếu có khoảng trống
+      object-fit: contain;
+      background: #000;
     }
   }
 }
