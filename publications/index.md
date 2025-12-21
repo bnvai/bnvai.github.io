@@ -15,6 +15,6 @@ title: Resources
 ## Publications
 
 {% include pub-sort.html %}
-{% include publications.html publications=sorted_publications %}
+{% include publications.html %}
 
 {% include centerer.html html=html %}
