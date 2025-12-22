@@ -1,6 +1,5 @@
 {% include figure.html
    image="images/bia.png"
-   caption="My Hero Image"
    hero="true"
 %}
 
