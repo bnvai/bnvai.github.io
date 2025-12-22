@@ -1,7 +1,6 @@
 {%
   include figure.html
-  image="images/paper1.jpg"
-  height="850px"
+  image="images/bia.png"
 %}
 
 <!-- section break -->
