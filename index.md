@@ -5,13 +5,13 @@
 
 <!-- section break -->
 
-# Upcoming Feature
+## Upcoming Feature
 
 {% include carousel-container.html %}
 
 <!-- section break -->
 
-# Feature
+## Feature
 
 <!-- ===================================================== -->
 <!-- Flexible Hydrogel Materials -->
@@ -83,7 +83,7 @@ Smart wound patches provide a powerful tool for continuous wound monitoring, ena
 
 <!-- section break -->
 
-# Gallery
+## Gallery
 
 {%
   include gallery.html
@@ -124,8 +124,8 @@ A _gallery_ component, without fitting the images to squares, and without the im
 {%
   include card.html
   size="large"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
+  image="images/top12.jpg"
+  link="https://www.pknu.ac.kr/main/32?action=view&no=721829"
   heading="Large card"
   truncate=2
   row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
@@ -135,8 +135,8 @@ A _gallery_ component, without fitting the images to squares, and without the im
 {%
   include card.html
   size="large"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
+  image="images/smartMat.jpg"
+  link="https://www.pknu.ac.kr/eng/4?action=view&no=720299"
   heading="Large card"
   truncate=2
   row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
@@ -190,7 +190,7 @@ An example of putting other components in a row:
 
 {% include centerer.html html=largecards %}
 
-{% capture mediumcards %}
+<!-- {% capture mediumcards %}
 {%
   include card.html
   size="medium"
@@ -217,7 +217,7 @@ An example of putting other components in a row:
 %}
 {% endcapture %}
 
-{% include centerer.html html=mediumcards %}
+{% include centerer.html html=mediumcards %} -->
 
 <!-- section break -->
 
