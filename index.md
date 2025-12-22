@@ -1,6 +1,7 @@
-{%
-  include figure.html
-  image="images/bia.png"
+{% include figure.html
+   image="images/bia.png"
+   caption="My Hero Image"
+   hero="true"
 %}
 
 <!-- section break -->
