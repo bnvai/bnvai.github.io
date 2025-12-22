@@ -1,15 +1,7 @@
-{% capture hero_content %}
-<a
-href="{{ 'research' | relative_url }}"
-class="nav_link hero-btn"
-data-tooltip="Published works"
-
-> Explore Research
-> </a>
-> {% endcapture %}
-
-{% include figure.html
+{%
+  include figure.html
   image="images/paper1.jpg"
+  height="850px"
 %}
 
 <!-- section break -->
