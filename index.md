@@ -83,7 +83,6 @@ A _gallery_ component, without fitting the images to squares, and without the im
   truncate=2
   row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
   row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
 %}
 {% capture html %}
 An example of putting other components in a row:
@@ -91,7 +90,8 @@ An example of putting other components in a row:
 {%
   include card.html
   size="large"
-  image="images/typo-in-filename-whoops.jpg"
+  image="images/space.jpg"
+  link="https://nasa.gov/"
   row1="A card with a placeholder image in case the specified image can't be loaded"
   row2=tags
 %}
