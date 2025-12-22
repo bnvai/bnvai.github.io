@@ -19,7 +19,7 @@ These flexible hydrogels are engineered to mimic the mechanical properties of na
 {% endcapture %}
 {%
   include feature.html
-  image="images/research1.jpg"
+  image="images/paper1.jpg"
   link="resources"
   heading="Flexible Hydrogel Materials"
   text=text
@@ -36,7 +36,7 @@ By translating physiological signals such as wound pH into optical or electronic
 {% endcapture %}
 {%
   include feature.html
-  image="images/research2.jpg"
+  image="images/paper2.jpg"
   link="resources"
   heading="Point-of-Care Wound Diagnostics"
   text=text
@@ -53,7 +53,7 @@ These wearable platforms are optimized for long-term use in daily life, allowing
 {% endcapture %}
 {%
   include feature.html
-  image="images/research3.jpg"
+  image="images/paper3.jpg"
   link="resources"
   heading="Wearable Bioelectronic Devices"
   text=text
@@ -70,7 +70,7 @@ Smart wound patches provide a powerful tool for continuous wound monitoring, ena
 {% endcapture %}
 {%
   include feature.html
-  image="images/research4.jpg"
+  image="images/paper4.jpg"
   link="resources"
   heading="Smart Patches for Wound Monitoring"
   text=text
