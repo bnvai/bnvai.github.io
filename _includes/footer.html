@@ -1,40 +1,63 @@
 <footer class="site-footer">
   <div class="footer-inner">
-    <!-- Social links -->
-    <div class="footer-social">
-      {%- include social-link.html type="website" -%} {%- include
-      social-link.html type="contact" -%} {%- include social-link.html
-      type="google" -%}
-    </div>
+    <div class="footer-columns">
+      <!-- ===================== -->
+      <!-- COLUMN 1 -->
+      <!-- ===================== -->
+      <div class="footer-col">
+        <!-- Social links -->
+        <div class="footer-social">
+          {%- include social-link.html type="website" -%} {%- include
+          social-link.html type="contact" -%} {%- include social-link.html
+          type="google" -%}
+        </div>
 
-    <!-- Divider -->
-    <div class="footer-divider"></div>
+        <!-- Divider -->
+        <div class="footer-divider"></div>
 
-    <!-- Copyright -->
-    <div class="footer-copy">
-      © <span id="year"></span> <strong>{{ site.title }}</strong>. All rights
-      reserved.
-      <span class="footer-meta"> © NBMInnoLab · PKNU </span>
-    </div>
-
-    <!-- Divider -->
-    <div class="footer-divider"></div>
-
-    <!-- Contact Info -->
-    <div class="footer-contact">
-      <div>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:smondal@pknu.ac.kr">smondal@pknu.ac.kr</a>
+        <!-- Copyright -->
+        <div class="footer-copy">
+          © <span id="year"></span> <strong>{{ site.title }}</strong>. All
+          rights reserved.
+          <span class="footer-meta"> © NBMInnoLab · PKNU </span>
+        </div>
       </div>
 
-      <div>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+820516295771">+82 051-629-5771</a>
+      <!-- ===================== -->
+      <!-- COLUMN 2 - CONTACT -->
+      <!-- ===================== -->
+      <div class="footer-col">
+        <h3>Contact</h3>
+
+        <div class="footer-contact">
+          <div>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:smondal@pknu.ac.kr">smondal@pknu.ac.kr</a>
+          </div>
+
+          <div>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+820516295771">+82 051-629-5771</a>
+          </div>
+
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            Room 1202, Ungbi A12, PKNU, Busan, Korea
+          </div>
+        </div>
       </div>
 
-      <div>
-        <i class="fas fa-map-marker-alt"></i>
-        Room 1202, Ungbi A12, PKNU, Busan, Korea
+      <!-- ===================== -->
+      <!-- COLUMN 3 - QUICK LINKS -->
+      <!-- ===================== -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/research">Research</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/publicatiosn">Publications</a></li>
+        </ul>
       </div>
     </div>
   </div>

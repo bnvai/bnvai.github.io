@@ -19,8 +19,7 @@ header {
   .logo_row {
     @include inline-flex-center;
 
-    /* VÙNG LOGO + TÊN MÀU XANH */
-    background: #ffffff; // đổi thành màu xanh bạn muốn
+    background: #ffffff;
     height: 100%;
     padding: 0 20px;
     align-self: stretch;
