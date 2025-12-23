@@ -1,26 +1,30 @@
-<a {% if include.link %}href="{{ include.link | relative_url }}"{% endif %} class="portrait" data-mini="{{ include.mini | default: false }}">
-
-  {%- assign placeholder = include.placeholder | default: "images/placeholder.svg" | relative_url -%}
+<a
+  {%
+  if
+  include.link
+  %}href="{{ include.link | relative_url }}"
+  {%
+  endif
+  %}
+  class="portrait portrait-role-{{ include.raw_role }}{% if include.mini %} portrait-mini{% endif %}"
+  data-mini="{{ include.mini | default: false }}"
+>
+  {%- assign placeholder = include.placeholder | default:
+  "images/placeholder.svg" | relative_url -%}
 
   <span class="portrait_image">
     {%- if include.image -%}
     <img
       src="{{ include.image | relative_url }}"
-      onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
-    >
+      onerror="this.src='{{ placeholder }}'; this.onerror=null;"
+    />
     {%- else -%}
-    <img src="{{ placeholder }}">
+    <img src="{{ placeholder }}" />
     {%- endif -%}
   </span>
 
-  {%- if include.role -%}
-  {%- include role.html type=include.role -%}
+  {%- if include.role -%} {%- include role.html type=include.role -%} {%- endif
+  -%} {%- if include.name -%}
+  <span class="portrait_name"> {{ include.name }} </span>
   {%- endif -%}
-
-  {%- if include.name -%}
-  <span class="portrait_name">
-    {{ include.name }}
-  </span>
-  {%- endif -%}
-
 </a>

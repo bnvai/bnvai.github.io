@@ -15,5 +15,5 @@ Researcher" %} {% when "phd" %} {% assign role_label = "Ph.D. Student" %} {%
 when "ms" %} {% assign role_label = "M.S. Student" %} {% when "undergrad" %} {%
 assign role_label = "Undergraduate Student" %} {% else %} {% assign role_label =
 "Member" %} {% endcase %} {%- include portrait.html name=member.title
-link=member.url image=member.image role=role_label mini=include.mini -%} {%
-endfor %}
+link=member.url image=member.image role=role_label raw_role=member.role
+mini=include.mini -%} {% endfor %}

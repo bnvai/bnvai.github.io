@@ -1,20 +1,20 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .portrait {
   position: relative;
   @include inline-flex-center;
   flex-direction: column;
-  width: 150px;
+  width: 250px;
   margin: 20px;
   text-decoration: none;
 
   .portrait_image {
     display: inline-block;
-    width: 150px;
+    width: 250px;
     height: 150px;
     border-radius: 999px;
     overflow: hidden;
@@ -32,13 +32,13 @@
     }
   }
 
-  &[data-mini="true"] {
-    width: 100px;
+  &[data-mini='true'] {
+    width: 150px;
     margin: 10px;
 
     .portrait_image {
-      width: 100px;
-      height: 100px;
+      width: 150px;
+      height: 150px;
     }
   }
 
@@ -63,12 +63,75 @@
     border-radius: 999px;
   }
 
-  &[data-mini="true"] {
+  &[data-mini='true'] {
     .role {
       left: 0;
       top: 0;
       width: 30px;
       height: 30px;
     }
+  }
+  /* ================================
+   ROLE HIERARCHY – VISUAL ONLY
+   (KHÔNG ẢNH HƯỞNG LOGIC)
+   ================================ */
+
+  /* PI – nổi bật nhất */
+  .portrait-role-pi {
+    .portrait_image {
+      box-shadow: 0 0 0 3px rgba($primary, 0.35), $shadow;
+    }
+
+    .role {
+      background: $primary;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+
+  /* Postdoc – senior */
+  .portrait-role-postdoc {
+    .portrait_image {
+      box-shadow: 0 0 0 2px rgba($primary, 0.2), $shadow;
+    }
+
+    .role {
+      background: lighten($primary, 35%);
+      color: $black;
+    }
+  }
+
+  /* PhD */
+  .portrait-role-phd {
+    .role {
+      background: lighten($gray, 35%);
+      color: $black;
+    }
+  }
+
+  /* MS */
+  .portrait-role-ms {
+    .role {
+      background: lighten($gray, 45%);
+      color: $black;
+    }
+  }
+
+  /* Undergraduate – nhẹ nhất */
+  .portrait-role-undergrad {
+    opacity: 0.92;
+
+    .role {
+      background: $white;
+      color: $gray;
+      border: 1px solid rgba($gray, 0.3);
+    }
+  }
+
+  /* ================================
+    MINI (ALUMNI)
+    ================================ */
+  .portrait-mini {
+    opacity: 0.65;
   }
 }
