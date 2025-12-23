@@ -6,15 +6,17 @@ title: Team
 
 <div class="team-section" markdown="0">
 {% include team-list.html role="pi" group="current" %}
+
+{% include centerer.html html=html %}
 </div>
 
 <!-- section break -->
 
-## Postdoctoral Researchers
+<!-- ## Postdoctoral Researchers
 
 <div class="team-section" markdown="0">
 {% include team-list.html role="postdoc" group="current" %}
-</div>
+</div> -->
 
 <!-- section break -->
 
@@ -23,15 +25,17 @@ title: Team
 <div class="team-section" markdown="0">
 {% include team-list.html role="phd" group="current" %}
 {% include team-list.html role="ms" group="current" %}
+
+{% include centerer.html html=html %}
 </div>
 
 <!-- section break -->
 
-## Undergraduate Students
+<!-- ## Undergraduate Students
 
 <div class="team-section" markdown="0">
 {% include team-list.html role="undergrad" group="current" %}
-</div>
+</div> -->
 
 <!-- ================================================= -->
 
@@ -39,4 +43,6 @@ title: Team
 
 <div class="team-section" markdown="0">
 {% include team-list.html group="alum" mini="true" %}
+
+{% include centerer.html html=html %}
 </div>

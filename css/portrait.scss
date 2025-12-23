@@ -8,14 +8,14 @@
   position: relative;
   @include inline-flex-center;
   flex-direction: column;
-  width: 250px;
+  width: 350px;
   margin: 20px;
   text-decoration: none;
 
   .portrait_image {
     display: inline-block;
-    width: 250px;
-    height: 150px;
+    width: 350px;
+    height: 200px;
     border-radius: 999px;
     overflow: hidden;
     box-shadow: $shadow;
@@ -33,12 +33,12 @@
   }
 
   &[data-mini='true'] {
-    width: 150px;
+    width: 250px;
     margin: 10px;
 
     .portrait_image {
-      width: 150px;
-      height: 150px;
+      width: 250px;
+      height: 250px;
     }
   }
 

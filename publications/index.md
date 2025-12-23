@@ -20,6 +20,8 @@ Our Publications →
 
 {% include books.html %}
 
+{% include centerer.html html=html %}
+
 <!-- section break -->
 
 ## Publications
