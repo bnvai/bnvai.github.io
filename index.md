@@ -1,6 +1,5 @@
 {% include figure.html
    image="images/bia.png"
-   hero="true"
 %}
 
 <!-- section break -->
@@ -83,33 +82,32 @@ Smart wound patches provide a powerful tool for continuous wound monitoring, ena
 
 <!-- section break -->
 
-## Gallery
-
-{%
-  include gallery.html
-  image1="images/paper1.jpg"
-  image2="images/paper2.jpg"
-  image3="images/paper3.jpg"
-  image4="images/paper4.jpg"
-  image5="images/paper5.jpg"
-%}
+## Some Activities
 
 A _gallery_ component, without fitting the images to squares, and without the image effects.
 
 {%
-  include gallery.html
-  flat="true"
-  fit="false"
-  image1="images/cell.jpg"
-  tooltip1="Cell"
-  link1="https://cell.com/"
-  image2="images/virus.jpg"
-  tooltip2="Virus"
-  image3="images/cell.jpg"
-  tooltip3="Cell"
-  link3="https://cell.com/"
-  image4="images/virus.jpg"
-  image5="images/bacteria.jpg"
+include gallery.html
+flat="true"
+fit="false"
+image1="images/paper1.jpg"
+tooltip1="Paper"
+link1="https://cell.com/"
+
+image2="images/paper2.jpg"
+tooltip2="Paper"
+
+image3="images/paper3.jpg"
+tooltip3="Paper"
+link3="https://cell.com/"
+
+image4="images/paper4.jpg"
+tooltip4="Paper"
+link4="https://cell.com/"
+
+image5="images/paper5.jpg"
+tooltip5="Paper"
+link5="https://cell.com/"
 %}
 
 <!-- section break -->
