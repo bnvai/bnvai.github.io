@@ -9,17 +9,11 @@ else %} {% assign role = include.role %} {% endif %} {% assign members = members
 != nil %} {% if include.group == "" %} {% assign group = nil %} {% else %} {%
 assign group = include.group %} {% endif %} {% assign members = members |
 where_exp: "member", "member.group == group" %} {% endif %} {% for member in
-members %} {% capture role_label %} {% case member.role %} {% when "pi"
-%}Professor{% endwhen %} {% when "postdoc" %}Postdoctoral Researcher{% endwhen
-%} {% when "phd" %}Ph.D. Student{% endwhen %} {% when "ms" %}M.S. Student{%
-endwhen %} {% when "undergrad" %}Undergraduate Student{% endwhen %} {% else
-%}Member{% endelse %} {% endcase %} {% endcapture %} {% capture portrait_class
-%} portrait-role-{{ member.role }} {% if include.mini %} portrait-mini{% endif
-%} {% endcapture %}
-
-<div class="{{ portrait_class | strip }}">
-  {%- include portrait.html name=member.title link=member.url image=member.image
-  role=role_label mini=include.mini -%}
-</div>
-
-{% endfor %}
+members %} {% case member.role %} {% when "pi" %} {% assign role_label =
+"Professor" %} {% when "postdoc" %} {% assign role_label = "Postdoctoral
+Researcher" %} {% when "phd" %} {% assign role_label = "Ph.D. Student" %} {%
+when "ms" %} {% assign role_label = "M.S. Student" %} {% when "undergrad" %} {%
+assign role_label = "Undergraduate Student" %} {% else %} {% assign role_label =
+"Member" %} {% endcase %} {%- include portrait.html name=member.title
+link=member.url image=member.image role=role_label mini=include.mini -%} {%
+endfor %}
