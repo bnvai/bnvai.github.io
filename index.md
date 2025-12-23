@@ -20,23 +20,6 @@ More About Us →
 
 # Feature
 
----
-title: Research
----
-
-{% capture hero_content %}
-<a class="hero-btn" href="#next-section">
-  Our Research →
-</a>
-{% endcapture %}
-
-{% include figure.html
-  image="images/researchbg.jpg"
-  hero=true
-  content=hero_content
-%}
-
-
 <!-- ===================================================== -->
 <!-- Flexible Hydrogel Materials -->
 <!-- ===================================================== -->
