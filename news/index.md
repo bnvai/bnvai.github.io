@@ -2,7 +2,7 @@
 title: News 
 ---
 
-# <i class="fas fa-feather-alt"></i>News
+<!-- # <i class="fas fa-feather-alt"></i>News -->
 
 {% include news-list.html %}
 
