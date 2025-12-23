@@ -10,19 +10,22 @@ redirect_from:
 
 # <i class="fas fa-users"></i>
 
-## Current Members
+## Faculty
 
-Our lab is a team focused on improving the reach, accuracy, and speed of computational analysis, specifically as
-it relates to genomics (and Biology more broadly). We are a varied and friendly bunch. If you're interested in
-the work we're doing, please reach out!
-
-{% capture html %}
 {% include team-list.html role="pi" group="current" %}
+
+## Postdoctoral Researchers
+
 {% include team-list.html role="postdoc" group="current" %}
+
+## Graduate Students
+
 {% include team-list.html role="phd" group="current" %}
 {% include team-list.html role="ms" group="current" %}
+
+## Undergraduate Students
+
 {% include team-list.html role="undergrad" group="current" %}
-{% endcapture %}
 
 {% include centerer.html html=html %}
 
