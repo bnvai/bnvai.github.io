@@ -8,7 +8,7 @@ h2,
 h3,
 h4 {
   .anchor {
-    display: none;
+    display: none !important;
     position: relative;
     width: 0;
     margin: 0;
@@ -24,7 +24,18 @@ h4 {
   .anchor:focus {
     opacity: 1;
   }
-}
+
+  .markdown-body h1 .anchor,
+  .markdown-body h2 .anchor,
+  .markdown-body h3 .anchor,
+  .markdown-body h4 .anchor,
+  .markdown-body h1 .octicon,
+  .markdown-body h2 .octicon,
+  .markdown-body h3 .octicon,
+  .markdown-body h4 .octicon {
+    display: none !important;
+  }
+  }
 
 [data-glow='true'] {
   animation: highlight_glow 2s;

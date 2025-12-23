@@ -2,7 +2,7 @@
 title: Activities
 ---
 
-# <i class="fas fa-feather-alt"></i> Activities
+<!-- # <i class="fas fa-feather-alt"></i> Activities -->
 
 {% assign events = site.data.activities | sort: "year" | reverse %}
 
