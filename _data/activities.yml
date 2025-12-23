@@ -34,5 +34,7 @@
   year: 2025
   order: 5
   images:
-    - src: images/IMG_5179.png
+    - src: images/hike1.jpg
+      caption: Travel
+    - src: images/hike2.jpg
       caption: Travel

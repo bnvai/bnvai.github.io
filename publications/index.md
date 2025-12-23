@@ -2,7 +2,17 @@
 title: Resources
 ---
 
-# <i class="fas fa-tools"></i> Resources
+{% capture hero_content %}
+<a class="hero-btn" href="#next-section">
+Our Publications →
+</a>
+{% endcapture %}
+
+{% include figure.html
+   image="images/pubbk.jpg"
+   hero=true
+   content=hero_content
+%}
 
 <!-- section break -->
 
