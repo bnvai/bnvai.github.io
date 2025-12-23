@@ -10,7 +10,6 @@ header {
   @include flex-center;
   justify-content: space-between;
 
-  /* HEADER TRẮNG */
   background: #ffffff;
   color: $black;
   font-family: $sans;
@@ -21,7 +20,7 @@ header {
     @include inline-flex-center;
 
     /* VÙNG LOGO + TÊN MÀU XANH */
-    background: $white; // đổi thành màu xanh bạn muốn
+    background: #ffffff; // đổi thành màu xanh bạn muốn
     height: 100%;
     padding: 0 20px;
     align-self: stretch;
@@ -36,7 +35,7 @@ header {
       font-size: 1.85rem;
       margin: 0 10px;
       text-align: center;
-      color: #ffffff; // chữ trắng để nổi
+      color: $black !important; // chữ đen
     }
   }
 
