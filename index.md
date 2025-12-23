@@ -4,13 +4,13 @@
 
 <!-- section break -->
 
-## Upcoming Feature
+# Upcoming Feature
 
 {% include carousel-container.html %}
 
 <!-- section break -->
 
-## Feature
+# Feature
 
 <!-- ===================================================== -->
 <!-- Flexible Hydrogel Materials -->
@@ -82,37 +82,39 @@ Smart wound patches provide a powerful tool for continuous wound monitoring, ena
 
 <!-- section break -->
 
-## Some Activities
-
-A _gallery_ component, without fitting the images to squares, and without the image effects.
+# Activities
 
 {%
 include gallery.html
 flat="true"
 fit="false"
-image1="images/paper1.jpg"
+image1="images/act1.jpg"
 tooltip1="Paper"
 link1="https://cell.com/"
 
-image2="images/paper2.jpg"
+image2="images/act2.jpg"
 tooltip2="Paper"
 
-image3="images/paper3.jpg"
+image3="images/act3.jpg"
 tooltip3="Paper"
 link3="https://cell.com/"
 
-image4="images/paper4.jpg"
+image4="images/act4.jpg"
 tooltip4="Paper"
 link4="https://cell.com/"
 
-image5="images/paper5.jpg"
+image5="images/act5.jpg"
 tooltip5="Paper"
-link5="https://cell.com/"
+link6="https://cell.com/"
+
+image6="images/act6.jpg"
+tooltip6="Paper"
+link6="https://cell.com/"
 %}
 
 <!-- section break -->
 
-## Latest News
+# Latest News
 
 {% capture tags %}
 {% include tags.html tags="red, hammer, elephant, supercalifragilisticexpialidocious" %}

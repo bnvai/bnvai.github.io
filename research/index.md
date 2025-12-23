@@ -2,6 +2,8 @@
 title: Research
 ---
 
+# <i class="fas fa-feather-alt"></i>Research
+
 {%
   include figure.html
   image="images/researchlist.jpg"
