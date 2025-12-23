@@ -23,17 +23,24 @@ header {
     padding: 0 20px;
     align-self: stretch;
 
+    /* 🔥 Giữ logo đúng màu xanh gốc */
+    .logo svg,
+    .logo img {
+      filter: none !important;
+    }
+
     .logo > * {
       max-width: 100%;
       height: 100px;
     }
 
+    /* 🔥 Tên màu xanh */
     .logo_text {
       font-family: $sans;
       font-size: 1.85rem;
       margin: 0 10px;
       text-align: center;
-      color: #002de6 !important; // chữ đen
+      color: #002de6 !important;
     }
   }
 
@@ -51,17 +58,18 @@ header {
       text-align: center;
       white-space: nowrap;
       transition: opacity $fast;
+      color: $black !important; /* 🔥 Menu đen */
     }
 
     &:hover .nav_link {
       opacity: 0.25;
     }
-
     & .nav_link:hover {
       opacity: 1;
     }
   }
 
+  /* 🔥 đảm bảo link header vẫn đen, chỉ logo_text xanh */
   a {
     color: $black !important;
     font-family: $sans;
@@ -70,7 +78,6 @@ header {
 
   @media (max-width: $tablet) {
     flex-direction: column;
-
     .logo_row {
       margin-bottom: 10px;
     }
@@ -81,11 +88,9 @@ header {
       margin-bottom: 20px;
       flex-direction: column;
     }
-
     .nav_row {
       flex-direction: column;
       width: 100%;
-
       .nav_link {
         width: 100%;
       }
