@@ -13,7 +13,7 @@ header {
 
   /* HEADER TRẮNG */
   background: #ffffff;
-  color: #000;
+  color: $black;
   font-family: $sans;
   box-shadow: $shadow;
   z-index: 1;
@@ -23,8 +23,6 @@ header {
 
     /* VÙNG LOGO + TÊN MÀU XANH */
     background: #0076ff; // đổi thành màu xanh bạn muốn
-    padding: 10px 15px;
-    border-radius: 8px;
 
     .logo > * {
       max-width: 100%;
