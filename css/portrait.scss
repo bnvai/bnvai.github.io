@@ -79,7 +79,7 @@
   /* PI – nổi bật nhất */
   .portrait-role-pi {
     .portrait_image {
-      box-shadow: 0 0 0 3px rgba($primary, 0.35), $shadow;
+      box-shadow: 0 0 0 3px rgba($gray, 0.35), $shadow;
     }
 
     .role {
@@ -92,11 +92,11 @@
   /* Postdoc – senior */
   .portrait-role-postdoc {
     .portrait_image {
-      box-shadow: 0 0 0 2px rgba($primary, 0.2), $shadow;
+      box-shadow: 0 0 0 2px rgba($gray, 0.2), $shadow;
     }
 
     .role {
-      background: lighten($primary, 35%);
+      background: lighten($gray, 35%);
       color: $black;
     }
   }
