@@ -1,5 +1,13 @@
+{% capture hero_content %}
+<a class="hero-btn" href="#next-section">
+More About Us →
+</a>
+{% endcapture %}
+
 {% include figure.html
    image="images/bia.png"
+   hero=true
+   content=hero_content
 %}
 
 <!-- section break -->
