@@ -10,14 +10,21 @@ header {
   @include flex-center;
   justify-content: space-between;
   padding: 40px;
-  color: $white;
-  background: $dark-gray;
+
+  /* HEADER TRẮNG */
+  background: #ffffff;
+  color: #000;
   font-family: $sans;
   box-shadow: $shadow;
   z-index: 1;
 
   .logo_row {
     @include inline-flex-center;
+
+    /* VÙNG LOGO + TÊN MÀU XANH */
+    background: #0076ff; // đổi thành màu xanh bạn muốn
+    padding: 10px 15px;
+    border-radius: 8px;
 
     .logo > * {
       max-width: 100%;
@@ -29,6 +36,7 @@ header {
       font-size: 1.85rem;
       margin: 0 10px;
       text-align: center;
+      color: #ffffff; // chữ trắng để nổi
     }
   }
 
