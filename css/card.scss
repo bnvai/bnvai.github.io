@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .card {
   box-sizing: border-box;
@@ -46,8 +46,31 @@
     }
   }
 
-  &[data-size="large"] {
+  &[data-size='large'] {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 20px;
+
+    .card_image {
+      width: 450px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .card_text {
+      width: 100%;
+
+      .card_title {
+        text-align: center;
+      }
+    }
+  }
+
+  &[data-size='medium'] {
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -69,30 +92,7 @@
     }
   }
 
-  &[data-size="medium"] {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    width: 200px;
-    margin: 20px;
-
-    .card_image {
-      width: 200px;
-      height: 150px;
-      margin-bottom: 20px;
-    }
-
-    .card_text {
-      width: 100%;
-
-      .card_title {
-        text-align: center;
-      }
-    }
-  }
-
-  &[data-size="small"] {
+  &[data-size='small'] {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
