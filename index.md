@@ -1,6 +1,6 @@
 {% capture hero_content %}
 <a class="hero-btn" href="#next-section">
-More About Us →
+  More About Us
 </a>
 {% endcapture %}
 
@@ -10,11 +10,13 @@ More About Us →
    content=hero_content
 %}
 
-<!-- section break -->
+<section id="next-section">
 
 # Upcoming Feature
 
 {% include carousel-container.html %}
+
+</section>
 
 <!-- section break -->
 
