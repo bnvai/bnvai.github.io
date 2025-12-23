@@ -110,4 +110,31 @@
       gap: 1rem;
     }
   }
+
+  .footer-contact {
+    margin: 1rem auto 1.5rem;
+    max-width: 520px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba($white, 0.8);
+
+    div {
+      margin: 0.3rem 0;
+    }
+
+    i {
+      margin-right: 8px;
+      color: rgba($white, 0.95);
+    }
+
+    a {
+      color: rgba($white, 0.9);
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
 }
