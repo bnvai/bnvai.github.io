@@ -9,7 +9,7 @@ Our Publications →
 {% endcapture %}
 
 {% include figure.html
-   image="images/pubbk.jpg"
+   image="images/pubbg.jpg"
    hero=true
    content=hero_content
 %}

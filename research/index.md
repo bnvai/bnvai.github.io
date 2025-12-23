@@ -2,12 +2,16 @@
 title: Research
 ---
 
-# <i class="fas fa-feather-alt"></i>Research
+{% capture hero_content %}
+<a class="hero-btn" href="#next-section">
+Our Research →
+</a>
+{% endcapture %}
 
-{%
-  include figure.html
-  image="images/researchlist.jpg"
-  height="850px"
+{% include figure.html
+   image="images/researchbg.jpg"
+   hero=true
+   content=hero_content
 %}
 
 <!-- ===================================================== -->

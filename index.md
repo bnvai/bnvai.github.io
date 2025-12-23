@@ -5,7 +5,7 @@ More About Us →
 {% endcapture %}
 
 {% include figure.html
-   image="images/homebk.jpg"
+   image="images/homebg1.jpg"
    hero=true
    content=hero_content
 %}
