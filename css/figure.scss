@@ -1,9 +1,8 @@
 ---
 ---
 
-@import "variables";
-@import "mixins";
-
+@import 'variables';
+@import 'mixins';
 
 .figure {
   @include flex-center;
@@ -12,9 +11,9 @@
   @include trim-margins;
 
   .figure_image {
-    img[data-default="true"] {
-      max-width: 400px;
-      max-height: 300px;
+    img[data-default='true'] {
+      max-width: $page;
+      max-height: 450px;
     }
   }
 
@@ -25,7 +24,7 @@
     text-align: center;
   }
 
-  &[data-flat="false"] {
+  &[data-flat='false'] {
     .figure_image {
       overflow: hidden;
       box-shadow: $shadow;
@@ -45,7 +44,7 @@
    HERO FIGURE – FULL SCREEN (DESKTOP FIRST)
    ================================================= */
 
-.figure[data-hero="true"] {
+.figure[data-hero='true'] {
   position: relative;
 
   /* thoát container */
@@ -65,7 +64,7 @@
   min-height: 100vh;
 
   /* không cho hover zoom */
-  &[data-flat="false"] .figure_image:hover img {
+  &[data-flat='false'] .figure_image:hover img {
     transform: none;
   }
 
@@ -89,7 +88,7 @@
 
   /* overlay tối */
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     z-index: 1;
@@ -132,47 +131,40 @@
     letter-spacing: 0.8px;
 
     /* COLOR */
-    color: #0f172a;                // chữ đậm
-    background: #f8fafc;           // nền sáng (blue-gray)
-    border: 3px solid #38bdf8;     // viền xanh nổi (Tailwind sky-400)
+    color: #0f172a; // chữ đậm
+    background: #f8fafc; // nền sáng (blue-gray)
+    border: 3px solid #38bdf8; // viền xanh nổi (Tailwind sky-400)
 
-    border-radius: 14px;           // không quá tròn → học thuật
+    border-radius: 14px; // không quá tròn → học thuật
 
     text-decoration: none;
     cursor: pointer;
 
-    box-shadow:
-      0 12px 28px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 
-    transition:
-      transform 0.25s ease,
-      background 0.25s ease,
-      box-shadow 0.25s ease,
-      color 0.25s ease;
+    transition: transform 0.25s ease, background 0.25s ease,
+      box-shadow 0.25s ease, color 0.25s ease;
   }
 
   /* Hover */
   .hero-btn:hover {
-    background: #e0f2fe;           // sáng hơn
+    background: #e0f2fe; // sáng hơn
     color: #020617;
     transform: translateY(-4px);
-    box-shadow:
-      0 20px 45px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
   }
 
   /* Active */
   .hero-btn:active {
     transform: translateY(-2px);
   }
-
 }
 
 /* =================================================
    TABLET (≤ 1024px)
    ================================================= */
 @media (max-width: 1024px) {
-  .figure[data-hero="true"] {
-
+  .figure[data-hero='true'] {
     height: auto;
     min-height: unset;
 
@@ -183,7 +175,7 @@
     .figure_image img {
       height: auto;
       width: 100%;
-      object-fit: contain; 
+      object-fit: contain;
       background: #000;
     }
   }
@@ -193,8 +185,7 @@
    MOBILE (≤ 768px)
    ================================================= */
 @media (max-width: 768px) {
-  .figure[data-hero="true"] {
-
+  .figure[data-hero='true'] {
     height: auto;
     min-height: unset;
 
@@ -215,8 +206,7 @@
    SMALL MOBILE (≤ 480px)
    ================================================= */
 @media (max-width: 480px) {
-  .figure[data-hero="true"] {
-
+  .figure[data-hero='true'] {
     height: auto;
     min-height: unset;
 
@@ -227,8 +217,8 @@
     .figure_image img {
       height: auto;
       width: 100%;
-      object-fit: contain;   // 🔥 KHÔNG CROP – KHÔNG MÉO
-      background: #000;      // viền đen nếu có khoảng trống
+      object-fit: contain;
+      background: #000;
     }
   }
 }
