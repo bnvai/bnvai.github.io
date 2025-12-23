@@ -1,27 +1,17 @@
 {%- assign icon = "fas fa-user" -%} {%- assign text = "Default Role" -%} {%- if
 include.type == "pi" -%} {%- assign icon = "fas fa-microscope" -%} {%- assign
-text = "Principal Investigator" -%} {%- endif -%} {%- if include.type ==
-"postdoc" -%} {%- assign icon = "fas fa-glasses" -%} {%- assign text =
-"Postdoctoral Researcher" -%} {%- endif -%} {%- if include.type == "phd" -%} {%-
-assign icon = "fas fa-graduation-cap" -%} {%- assign text = "PhD Student" -%}
-{%- endif -%} {%- if include.type == "phd_g" -%} {%- assign icon = "fas
-fa-graduation-cap" -%} {%- assign text = "PhD (graduated)" -%} {%- endif -%} {%-
-if include.type == "ms" -%} {%- assign icon = "fas fa-user-graduate" -%} {%-
-assign text = "Master Student" -%} {%- endif -%} {%- if include.type ==
-"undergrad" -%} {%- assign icon = "fas fa-code" -%} {%- assign text =
-"Undergraduate Student" -%} {%- endif -%} {%- if include.text -%} {%- else -%}
-{%- assign tooltip = text -%} {%- endif -%} {%- comment -%} To add more options
-for icons, see: https://fontawesome.com/icons?d=gallery&q=icon&m=free {%-
-endcomment -%}
+text = "Professor" -%} {%- endif -%} {%- if include.type == "postdoc" -%} {%-
+assign icon = "fas fa-glasses" -%} {%- assign text = "Postdoctoral Researcher"
+-%} {%- endif -%} {%- if include.type == "phd" -%} {%- assign icon = "fas
+fa-graduation-cap" -%} {%- assign text = "Ph.D. Student" -%} {%- endif -%} {%-
+if include.type == "phd_g" -%} {%- assign icon = "fas fa-graduation-cap" -%} {%-
+assign text = "Ph.D. (Graduated)" -%} {%- endif -%} {%- if include.type == "ms"
+-%} {%- assign icon = "fas fa-user-graduate" -%} {%- assign text = "M.S.
+Student" -%} {%- endif -%} {%- if include.type == "undergrad" -%} {%- assign
+icon = "fas fa-code" -%} {%- assign text = "Undergraduate Student" -%} {%- endif
+-%} {%- if include.label -%} {%- assign tooltip = include.label -%} {%- else -%}
+{%- assign tooltip = text -%} {%- endif -%}
 
-<span
-  href="{{ link }}"
-  class="role"
-  data-tooltip="{{ tooltip }}"
-  aria-label="{{ tooltip }}"
->
-  <i class="{{ icon }} {%- if include.large -%}fa-lg{%- endif -%}"></i>
-  {%- if include.text -%}
-  <span class="role_text">{{- text -}}</span>
-  {%- endif -%}
+<span class="role" data-tooltip="{{ tooltip }}" aria-label="{{ tooltip }}">
+  <i class="{{ icon }}{%- if include.large -%} fa-lg{%- endif -%}"></i>
 </span>
