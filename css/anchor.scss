@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "variables";
+@import 'variables';
 
 h1,
 h2,
@@ -12,6 +12,7 @@ h4 {
     position: relative;
     width: 0;
     margin: 0;
+    padding: 40px;
     left: 10px;
     color: $theme;
     opacity: 0;
@@ -25,7 +26,7 @@ h4 {
   }
 }
 
-[data-glow="true"] {
+[data-glow='true'] {
   animation: highlight_glow 2s;
 }
 

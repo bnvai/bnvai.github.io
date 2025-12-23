@@ -9,6 +9,7 @@ header {
   position: relative;
   @include flex-center;
   justify-content: space-between;
+  padding: 10px;
 
   background: #ffffff;
   font-family: $sans;
