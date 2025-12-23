@@ -23,6 +23,8 @@ header {
 
     /* VÙNG LOGO + TÊN MÀU XANH */
     background: #0076ff; // đổi thành màu xanh bạn muốn
+    height: 100%;
+    align-self: stretch;
 
     .logo > * {
       max-width: 100%;
@@ -64,7 +66,7 @@ header {
   }
 
   a {
-    color: $white !important;
+    color: $black !important;
     font-family: $sans;
     text-decoration: none;
   }
