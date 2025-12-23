@@ -7,10 +7,10 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  max-width: $page; // 1440 / 1920
-  margin: 3rem auto;
+  max-width: calc(#{$page} - 80px);
   padding: 0 2.5rem;
   overflow: hidden;
+  margin: 0 auto;
 
   @include flex-center;
   @include trim-margins;
@@ -76,7 +76,7 @@
     display: flex;
     flex-direction: column;
 
-    height: 300px;
+    height: 400px;
     background: #fff;
     border-radius: 14px;
     overflow: hidden;
