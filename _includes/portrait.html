@@ -6,7 +6,7 @@
   {%
   endif
   %}
-  class="portrait portrait-role-{{ include.raw_role }}{% if include.mini %} portrait-mini{% endif %}"
+  class="portrait"
   data-mini="{{ include.mini | default: false }}"
 >
   {%- assign placeholder = include.placeholder | default:
@@ -16,7 +16,7 @@
     {%- if include.image -%}
     <img
       src="{{ include.image | relative_url }}"
-      onerror="this.src='{{ placeholder }}'; this.onerror=null;"
+      onerror="this.src = '{{ placeholder }}'; this.onerror = null;"
     />
     {%- else -%}
     <img src="{{ placeholder }}" />
