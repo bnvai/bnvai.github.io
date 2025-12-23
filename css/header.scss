@@ -21,14 +21,14 @@ header {
     @include inline-flex-center;
 
     /* VÙNG LOGO + TÊN MÀU XANH */
-    background: #0600b5; // đổi thành màu xanh bạn muốn
+    background: $black; // đổi thành màu xanh bạn muốn
     height: 100%;
     padding: 0 20px;
     align-self: stretch;
 
     .logo > * {
       max-width: 100%;
-      height: 75px;
+      height: 100px;
     }
 
     .logo_text {
