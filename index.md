@@ -10,13 +10,9 @@
    content=hero_content
 %}
 
-<section id="next-section">
-
-# Upcoming Feature
+# Upcoming Feature {#next-section}
 
 {% include carousel-container.html %}
-
-</section>
 
 <!-- section break -->
 
