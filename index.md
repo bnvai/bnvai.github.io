@@ -130,36 +130,39 @@ link6="https://cell.com/"
 {%
   include card.html
   size="large"
-  image="images/top12.jpg"
+  image="images/paper1.jpg"
   link="https://www.pknu.ac.kr/main/32?action=view&no=721829"
-  heading="Large card"
+  heading="PKNU Research Featured in Global Top 0.12% Journal"
   truncate=2
-  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
-  row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
+  row1="A research team from Pukyong National University published a review article in Coordination Chemistry Reviews, ranked in the top 0.12% of journals worldwide."
+  row2="The study highlights biomimetic nanomaterial platforms for laser-based cancer diagnosis and phototherapy."
+  row3="Coordination Chemistry Reviews (Elsevier) • Impact Factor 23.5"
 %}
+
 {%
   include card.html
   size="large"
   image="images/smartMat.jpg"
   link="https://www.pknu.ac.kr/eng/4?action=view&no=720299"
-  heading="Large card"
+  heading="Smart Biomaterials for Next-Generation Wound Care"
   truncate=2
-  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
-  row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
+  row1="PKNU researchers developed flexible hydrogel-based smart materials for wound monitoring and therapeutic delivery."
+  row2="The platform integrates biocompatible polymers with responsive sensing mechanisms."
+  row3="Department of Biomedical Engineering • Pukyong National University"
 %}
+
 {%
   include card.html
   size="large"
   image="images/space.jpg"
-  link="https://nasa.gov/"
-  heading="Large card"
+  link="https://www.pknu.ac.kr/eng"
+  heading="Expanding International Research Collaboration"
   truncate=2
-  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
-  row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
+  row1="The NanoBioMedicine Innovation Lab continues to strengthen global research collaborations and interdisciplinary projects."
+  row2="Ongoing efforts focus on nanomedicine, bioelectronics, and translational healthcare technologies."
+  row3="International Collaboration & Research Outreach"
 %}
+
 {%
   include card.html
   size="large"
