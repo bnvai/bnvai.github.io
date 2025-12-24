@@ -16,7 +16,7 @@
 
 <!-- section break -->
 
-# Feature
+# Feature {#next-section1}
 
 <!-- ===================================================== -->
 <!-- Flexible Hydrogel Materials -->
@@ -88,7 +88,7 @@ Smart wound patches provide a powerful tool for continuous wound monitoring, ena
 
 <!-- section break -->
 
-# Activities
+# Activities {#next-section2}
 
 {%
 include gallery.html
@@ -120,7 +120,7 @@ link6="https://cell.com/"
 
 <!-- section break -->
 
-# Latest News
+# Latest News {#next-section3}
 
 {% capture tags %}
 {% include tags.html tags="red, hammer, elephant, supercalifragilisticexpialidocious" %}
@@ -230,7 +230,7 @@ An example of putting other components in a row:
 
 <!-- section break -->
 
-## Join Our Team
+# Join Our Team {#next-section4}
 
 Are you passionate about innovation in nanotechnology, biotechnology, or medical research? Whether you're a student, researcher, or industry partner, we're always open to new ideas and meaningful collaborations.
 
