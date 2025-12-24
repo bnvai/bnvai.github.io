@@ -4,7 +4,7 @@ title: Research
 
 {% capture hero_content %}
 <a class="hero-btn" href="#next-section">
-  Our Research →
+  Our Research
 </a>
 {% endcapture %}
 
@@ -14,7 +14,7 @@ title: Research
   content=hero_content
 %}
 
-
+# Feature {#next-section}
 <!-- ===================================================== -->
 <!-- Flexible Hydrogel Materials -->
 <!-- ===================================================== -->

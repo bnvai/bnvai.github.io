@@ -4,7 +4,7 @@ title: Resources
 
 {% capture hero_content %}
 <a class="hero-btn" href="#next-section">
-Our Publications →
+Our Publications
 </a>
 {% endcapture %}
 
@@ -16,7 +16,7 @@ Our Publications →
 
 <!-- section break -->
 
-## Books
+## Books {#next-section}
 
 {% include books.html %}
 
