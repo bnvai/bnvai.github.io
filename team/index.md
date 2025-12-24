@@ -2,7 +2,7 @@
 title: Team
 ---
 
-## Faculty
+## Professor
 
 {% capture html %}
 {% include team-list.html role="pi" group="current" %}
