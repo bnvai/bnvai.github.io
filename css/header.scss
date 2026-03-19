@@ -25,7 +25,6 @@ header {
     align-self: stretch;
     gap: $spacing-md;        // Add spacing between logo and text
 
-    /* 🔥 Giữ logo đúng màu xanh gốc */
     .logo svg,
     .logo img {
       filter: #002de6 !important;
