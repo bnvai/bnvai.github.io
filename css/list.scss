@@ -5,13 +5,13 @@
 @import "mixins";
 
 ul {
-  @include block-margins;
+  margin: $spacing-lg 0;            // Professional list spacing
   @include trim-margins;
-  padding-left: 20px;
+  padding-left: $spacing-xxl;       // Better indentation
   list-style-type: square;
 
   li {
-    margin: 10px 0;
+    margin: $spacing-md 0;          // Professional item spacing
     @include trim-margins;
   }
 }

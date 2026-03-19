@@ -4,7 +4,7 @@
 @import "variables";
 
 hr {
-  margin: 40px 0;
+  margin: $spacing-xxl 0;      // Professional spacing using variables
   background: $light-gray;
   border: none;
   height: 1px;

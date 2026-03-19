@@ -5,8 +5,9 @@
 @import "mixins";
 
 p {
-  @include block-margins;
+  margin: $spacing-lg 0;      // Professional paragraph spacing using variables
   @include trim-margins;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.8;           // Excellent readability
+  letter-spacing: 0.3px;      // Subtle professional touch
 }

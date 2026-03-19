@@ -9,7 +9,7 @@ header {
   position: relative;
   @include flex-center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px $spacing-xl;  // Professional padding for better proportions
 
   background: #ffffff;
   font-family: $sans;
@@ -21,8 +21,9 @@ header {
 
     background: #ffffff;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 $spacing-lg;  // Use spacing variable for consistency
     align-self: stretch;
+    gap: $spacing-md;        // Add spacing between logo and text
 
     /* 🔥 Giữ logo đúng màu xanh gốc */
     .logo svg,
@@ -32,7 +33,7 @@ header {
 
     .logo > * {
       max-width: 100%;
-      height: 100px;
+      height: 80px;       // Reduced for better proportion and professional look
     }
 
     /* 🔥 Tên màu xanh */
@@ -80,14 +81,16 @@ header {
 
   @media (max-width: $tablet) {
     flex-direction: column;
+    padding: $spacing-lg;
     .logo_row {
-      margin-bottom: 10px;
+      margin-bottom: $spacing-lg;
     }
   }
 
   @media (max-width: $phone) {
+    padding: $spacing-md;
     .logo_row {
-      margin-bottom: 20px;
+      margin-bottom: $spacing-md;
       flex-direction: column;
     }
     .nav_row {

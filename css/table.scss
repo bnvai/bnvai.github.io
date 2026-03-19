@@ -5,7 +5,7 @@
 @import "mixins";
 
 .table_wrapper {
-  margin: 40px 0;
+  margin: $spacing-xxl 0;          // Professional table spacing
   @include trim-margins;
   overflow-x: auto;
 
@@ -15,7 +15,7 @@
 
     th,
     td {
-      padding: 10px 15px;
+      padding: $spacing-md $spacing-lg;  // Professional cell padding
       border: solid 1px $light-gray;
     }
   }
