@@ -27,7 +27,7 @@ body {
       box-sizing: border-box;
       max-width: $page;
       margin: 0 auto;
-      padding: 0 $spacing-xl;  // Professional horizontal padding for balanced layout
+      padding: 0 auto;
     }
 
     &:nth-child(even) {

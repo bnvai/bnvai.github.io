@@ -29,19 +29,19 @@
   .card_text {
     .card_title {
       display: block;
-      margin-bottom: $spacing-md;      // Use spacing variable
+      margin-bottom: 10px;
       font-weight: $medium;
     }
 
     & > p {
-      margin: $spacing-xs 0;
+      margin: 5px 0;
       @include trim-margins;
     }
 
     & > div {
       @include flex-center;
       flex-wrap: wrap;
-      margin: $spacing-md 0;           // Use spacing variable
+      margin: 10px 0;
       @include trim-margins;
     }
   }
@@ -52,12 +52,13 @@
     align-items: center;
     flex-direction: column;
     width: 350px;
-    margin: $spacing-lg;      // Use spacing variable
+    margin: 20px;
 
     .card_image {
       width: 350px;
       height: 250px;
-      margin-bottom: $spacing-lg;  // Professional spacing
+      margin-bottom: 20px;
+    }
 
     .card_text {
       width: 100%;
@@ -74,12 +75,13 @@
     align-items: center;
     flex-direction: column;
     width: 250px;
-    margin: $spacing-lg;  // Consistent spacing
+    margin: 20px;
 
     .card_image {
       width: 250px;
       height: 150px;
-      margin-bottom: $spacing-lg;
+      margin-bottom: 20px;
+    }
 
     .card_text {
       width: 100%;
@@ -95,12 +97,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    margin: $spacing-lg 0;  // Professional small card spacing
+    margin: 20px 0;
 
     .card_image {
       width: 100px;
       height: 100px;
-      margin-right: $spacing-xl;  // Professional spacing between image and text
+      margin-right: 30px;
+    }
 
     .card_text {
       width: 0;

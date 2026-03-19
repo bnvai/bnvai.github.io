@@ -58,15 +58,13 @@ $tablet: 900px; // screen width cutoff point for tablets
 $phone: 500px; // screen width cutoff point for phones
 
 // --- Spacing ---
-// Professional spacing scale for better visual hierarchy and breathing room
 $spacing-xxs: 4px;
 $spacing-xs: 8px;
 $spacing-sm: 12px;
 $spacing-md: 16px;
 $spacing-lg: 20px;
-$spacing-xl: 32px;      // Increased for better balance
-$spacing-xxl: 48px;     // Increased for better breathing room
-$spacing-3xl: 64px;     // New level for large sections
+$spacing-xl: 30px;
+$spacing-xxl: 40px;
 
 // --- Shadows ---
 $shadow-card-light: 0 1px 3px rgba(0, 0, 0, 0.05); // Shadow for cards

@@ -5,8 +5,8 @@
 @import 'mixins';
 
 .site-footer {
-  margin-top: $spacing-3xl;                               // Professional spacing
-  padding: $spacing-xxl $spacing-xl;                     // Balanced professional padding
+  margin-top: 4rem;
+  padding: 2.5rem 1.5rem;
   background: $dark-gray;
   color: rgba($white, 0.85);
   font-family: $sans;

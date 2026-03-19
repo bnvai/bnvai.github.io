@@ -18,12 +18,10 @@
   }
 
   .figure_caption {
-    margin-top: $spacing-md;
+    margin-top: 10px;
     margin-bottom: 0;
     font-style: italic;
     text-align: center;
-    color: $dark-gray;              // Professional text color
-    font-size: 0.95em;              // Slightly smaller for captions
   }
 
   &[data-flat='false'] {
