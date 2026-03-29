@@ -7,6 +7,9 @@
 p {
   @include block-margins;
   @include trim-margins;
-  text-align: justify;
-  line-height: 1.8;
+  text-align: left;
+  line-height: 1.75;
+  color: $dark-gray;
+  font-size: 1em;
+  letter-spacing: 0.3px;
 }

@@ -39,9 +39,7 @@ Their biocompatibility and signal stability make them promising for pressure/str
 <!-- ===================================================== -->
 
 {% capture poc_text %}
-This work highlights hydrogel platforms for wound healing and real-time point-of-care monitoring.
-By mimicking extracellular tissue and integrating responsive sensing, these materials support safer and smarter wound-care systems.
-
+Hydrogel platforms for real-time wound monitoring, therapeutic delivery, and smart point-of-care diagnostics.
 {% endcapture %}
 
 {% include feature.html
@@ -56,9 +54,7 @@ By mimicking extracellular tissue and integrating responsive sensing, these mate
 <!-- ===================================================== -->
 
 {% capture wearable_text %}
-Bioinspired nanomaterials enable targeted photothermal and photodynamic therapy with reduced off-target damage.
-Our focus is on functionalized nanoparticles that improve delivery, light-triggered activation, and treatment precision in translational cancer nanomedicine.
-
+Bioinspired nanomaterials for targeted photothermal and photodynamic cancer therapy with enhanced delivery and precision.
 {% endcapture %}
 
 {% include feature.html
@@ -73,9 +69,7 @@ Our focus is on functionalized nanoparticles that improve delivery, light-trigge
 <!-- ===================================================== -->
 
 {% capture smartpatch_text %}
-Engineered metal nanoparticles offer strong potential for imaging-guided diagnostics and therapy in smart wound systems.
-We investigate surface engineering strategies that improve targeting and performance while addressing safety for clinical translation.
-
+Metal nanoparticles for imaging-guided diagnostics, therapeutic delivery, and next-generation wound-healing systems.
 {% endcapture %}
 
 {% include feature.html
