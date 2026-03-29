@@ -1,5 +1,5 @@
 {% capture hero_content %}
-<a class="hero-btn" href="#next-section">
+<a class="hero-btn" href="#feature-section">
 More About Us
 </a>
 {% endcapture %}
@@ -16,7 +16,7 @@ More About Us
 
 <!-- section break -->
 
-# Feature {#next-section}
+# Feature {#feature-section}
 
 <!-- ===================================================== -->
 <!-- Flexible Hydrogel Materials -->
