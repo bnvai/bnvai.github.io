@@ -23,9 +23,8 @@ More About Us
 <!-- ===================================================== -->
 
 {% capture flexible_text %}
-Recent years have witnessed rapidly growing interest in MXene-based materials for advanced sensing and wearable biomedical applications. Owing to their outstanding electrical conductivity, large specific surface area, mechanical flexibility, and rich surface chemistry, MXenes have emerged as promising candidates for flexible sensors capable of monitoring pressure, strain, physiological signals, and biochemical parameters. Their two-dimensional layered structure enables efficient signal transduction under mechanical deformation, making them particularly suitable for wearable electronics and human–machine interfaces.
-
-Moreover, the intrinsic hydrophilicity and biocompatibility of MXenes facilitate their integration into biomedical platforms for health monitoring, diagnostics, and implantable or skin-mounted devices. These unique properties position MXenes as a new class of functional materials bridging sensors, wearable systems, and biomedical technologies.
+MXene-based hydrogels combine high conductivity, flexibility, and rich surface chemistry for wearable sensing.
+Their biocompatibility and signal stability make them promising for pressure/strain monitoring, skin-mounted devices, and next-generation biomedical interfaces.
 {% endcapture %}
 
 {% include feature.html
@@ -40,9 +39,8 @@ Moreover, the intrinsic hydrophilicity and biocompatibility of MXenes facilitate
 <!-- ===================================================== -->
 
 {% capture poc_text %}
-The published paper explores recent advancements in hydrogel-based materials for wound healing and real-time monitoring. It highlights innovations in flexible, biocompatible hydrogels that mimic the extracellular matrix, addressing stability, toxicity, and integration with smart monitoring systems.
-
-Hydrogels are particularly promising in modern wound care due to their high-water content, flexibility, and biocompatibility. The research team illustrates the role of hydrogel-based flexible materials in advancing biomedical applications, including wound healing, point-of-care diagnostics, smart patches, and wearable devices.
+This work highlights hydrogel platforms for wound healing and real-time point-of-care monitoring.
+By mimicking extracellular tissue and integrating responsive sensing, these materials support safer and smarter wound-care systems.
 
 {% endcapture %}
 
@@ -58,9 +56,8 @@ Hydrogels are particularly promising in modern wound care due to their high-wate
 <!-- ===================================================== -->
 
 {% capture wearable_text %}
-Nanomedicine, propelled by advancements in nanotechnology, has significantly advanced cancer treatment by enabling precise, targeted, and minimally invasive therapeutic strategies. Among these, phototherapy (PT), including photothermal therapy (PTT) and photodynamic therapy (PDT), has attracted significant attention due to its ability to selectively eradicate cancer cells while minimizing damage to healthy tissues. These bioinspired nanomaterials exhibit enhanced biocompatibility, improved targeting efficiency, and controlled degradation, optimizing PTT and PDT performance.
-
-The paper illustrates nanoparticles of various compositions, including gold, silica, and carbon-based structures, emphasizing their surface functionalization for drug delivery and phototherapy. These nanoparticles are shown dispersed in a colloidal medium, highlighting their dynamic behavior. A directed light source, such as a laser or visible light, activates the nanomaterials. This activation triggers the nanoparticles´ phototoxic effects or the release of therapeutic agents, leading to the destruction of cancer cells.
+Bioinspired nanomaterials enable targeted photothermal and photodynamic therapy with reduced off-target damage.
+Our focus is on functionalized nanoparticles that improve delivery, light-triggered activation, and treatment precision in translational cancer nanomedicine.
 
 {% endcapture %}
 
@@ -76,9 +73,8 @@ The paper illustrates nanoparticles of various compositions, including gold, sil
 <!-- ===================================================== -->
 
 {% capture smartpatch_text %}
-The growing field of nanotechnology has witnessed numerous advancements over the past few years, particularly in the development of engineered nanoparticles. Compared with bulk materials, metal nanoparticles possess more favorable properties, such as increased chemical activity and toxicity, owing to their smaller size and larger surface area. Metal nanoparticles can be modified with different targeting agents such as antibodies, liposomes, transferrin, folic acid, and carbohydrates. Thus, metal nanoparticles hold great promise for various biomedical applications such as photoacoustic imaging, magnetic resonance imaging, computed tomography (CT), photothermal, and photodynamic therapy (PDT). Despite their potential, safety considerations, and regulatory hurdles must be addressed for safe clinical applications.
-
-This review highlights advancements in metal nanoparticle surface engineering and explores their integration with emerging technologies such as bioimaging, cancer therapeutics and nanomedicine. By offering valuable insights, this comprehensive review offers a deep understanding of the potential of metal nanoparticles in biomedical research.
+Engineered metal nanoparticles offer strong potential for imaging-guided diagnostics and therapy in smart wound systems.
+We investigate surface engineering strategies that improve targeting and performance while addressing safety for clinical translation.
 
 {% endcapture %}
 
@@ -114,7 +110,7 @@ link4="https://cell.com/"
 
 image5="images/act5.jpg"
 tooltip5="Paper"
-link6="https://cell.com/"
+link5="https://cell.com/"
 
 image6="images/act6.jpg"
 tooltip6="Paper"
@@ -124,10 +120,6 @@ link6="https://cell.com/"
 <!-- section break -->
 
 # Latest News {#next-section3}
-
-{% capture tags %}
-{% include tags.html tags="red, hammer, elephant, supercalifragilisticexpialidocious" %}
-{% endcapture %}
 
 {% capture largecards %}
 {%
@@ -164,39 +156,6 @@ link6="https://cell.com/"
   row1="The NanoBioMedicine Innovation Lab continues to strengthen global research collaborations and interdisciplinary projects."
   row2="Ongoing efforts focus on nanomedicine, bioelectronics, and translational healthcare technologies."
   row3="International Collaboration & Research Outreach"
-%}
-
-{%
-  include card.html
-  size="large"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
-  heading="Large card"
-  truncate=2
-  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
-  row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
-%}
-{%
-  include card.html
-  size="large"
-  image="images/space.jpg"
-  link="https://nasa.gov/"
-  heading="Large card"
-  truncate=2
-  row1="A clickable truncated row of really long text that is too wide to fit in the card but can still be expanded by focusing it"
-  row2="Another truncated row of really long text"
-  row3="A really long row of text that wraps instead of truncating"
-%}
-{% capture html %}
-An example of putting other components in a row:
-{% endcapture %}
-{%
-  include card.html
-  size="large"
-  image="images/typo-in-filename-whoops.jpg"
-  row1="A card with a placeholder image in case the specified image can't be loaded"
-  row2=tags
 %}
 {% endcapture %}
 
@@ -235,9 +194,7 @@ An example of putting other components in a row:
 
 # Join Our Team {#next-section4}
 
-Are you passionate about innovation in nanotechnology, biotechnology, or medical research? Whether you're a student, researcher, or industry partner, we're always open to new ideas and meaningful collaborations.
-
-Let's work together to shape the future of healthcare.
+Passionate about nanotechnology, biotechnology, or medical innovation? We welcome students, researchers, and collaborators to build impactful healthcare solutions together.
 
 {% include big-link.html icon="fas fa-hands-helping" text="Join the team" link="join" -%}
 {%- include big-link.html icon="fas fa-user-friends" text="Collaborators" link="collaborators" -%}
