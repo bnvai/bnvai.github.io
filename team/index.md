@@ -19,7 +19,7 @@ title: Team
 {% endcapture %}
 {% include centerer.html html=html %}
 
-<!-- ================================================= -->
+<!-- section break -->
 
 ## Alumni
 

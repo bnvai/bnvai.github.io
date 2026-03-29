@@ -24,7 +24,6 @@ header {
     padding: 0 20px;
     align-self: stretch;
 
-    /* 🔥 Giữ logo đúng màu xanh gốc */
     .logo svg,
     .logo img {
       filter: #002de6 !important;
@@ -35,7 +34,6 @@ header {
       height: 100px;
     }
 
-    /* 🔥 Tên màu xanh */
     .logo_text {
       font-family: $sans;
       font-size: 1.85rem;
@@ -51,7 +49,7 @@ header {
     flex-wrap: wrap;
     font-size: 1.25rem;
     font-weight: $medium;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 1px;
 
     .nav_link {
@@ -71,7 +69,6 @@ header {
     }
   }
 
-  /* 🔥 đảm bảo link header vẫn đen, chỉ logo_text xanh */
   a {
     color: #002de6 !important;
     font-family: $sans;
